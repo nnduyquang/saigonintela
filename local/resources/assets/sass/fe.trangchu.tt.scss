@@ -1,0 +1,49 @@
+#thongtin{
+  ul{
+    li{
+      float: left;
+      width: 100%;
+      min-height: 1em !important;
+      margin: 0 0 80px !important;
+      .tt-icon{
+        float: right;
+        position: relative;
+        font-size: 32px;
+        border-width: 0px;
+        border-style: none;
+        background: #dcb91c;
+        color: #ffffff;
+        border-color: #dcb91c;
+        width: 3em;
+        text-align: center;
+        height: 1.5em;
+        line-height: 1.5em;
+      }
+      .tt-icon:before{
+        content: "";
+        position: absolute;
+        top: -1em;
+        left: 0;
+        border-left: 1.5em solid rgba(0,0,0,0);
+        border-right: 1.5em solid rgba(0,0,0,0);
+        border-bottom: 1em solid;
+        border-bottom-color: inherit !important;
+      }
+      .tt-icon:after{
+        content: "";
+        position: absolute;
+        bottom: -1em;
+        left: 0;
+        border-left: 1.5em solid rgba(0,0,0,0);
+        border-right: 1.5em solid rgba(0,0,0,0);
+        border-top: 1em solid;
+        border-top-color: inherit !important;
+      }
+      .tt-description-left{
+        text-align: right;
+        margin-right: 1em;
+        padding-right: 105px;
+      }
+    }
+  }
+}

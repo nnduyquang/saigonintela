@@ -11,5 +11,28 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.styles([
+    'bower_components/jquery/dist/jquery.min.js',
+    'bower_components/bootstrap/dist/js/bootstrap.min.js',
+], '../js/core.common.js')
+    .styles([
+        'bower_components/bootstrap/dist/css/bootstrap.min.css',
+        'bower_components/font-awesome/css/font-awesome.min.css',
+    ], '../css/core.common.css')
+    .styles([
+        'bower_components/nivo-slider/jquery.nivo.slider.pack.js',
+    ], '../js/core.frontend.js')
+    .styles([
+        'bower_components/nivo-slider/nivo-slider.css',
+    ], '../css/core.frontend.css')
+    .sass('resources/assets/sass/frontend.scss', '../../css/frontend.css').options({processCssUrls: false})
+    .sass('resources/assets/sass/trangchu.scss', '../../css/trangchu.css').options({processCssUrls: false})
+    .styles('resources/assets/js/scripts.js', '../js/scripts.js')
+    .copy([
+        'bower_components/bootstrap/fonts/**',
+        'bower_components/font-awesome/fonts/**'
+    ], '../fonts')
+    .copy([
+        'bower_components/nivo-slider/themes',
+    ], '../css/themes', false)
+

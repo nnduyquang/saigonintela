@@ -1,0 +1,22 @@
+{
+  "name": "local",
+  "description": "",
+  "main": "",
+  "authors": [
+    "QUANG_CTY <nnduyquang@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nnduyquang/saigonintela",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "nivo-slider": "*"
+  }
+}

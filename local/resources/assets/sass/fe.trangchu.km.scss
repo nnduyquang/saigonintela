@@ -1,0 +1,27 @@
+#khuyen-mai {
+  .km-top {
+    display: table;
+    span.km-span-dash {
+      display: table-cell;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+      .line {
+        height: 1px;
+        border-top: 3px solid #eeee22;
+        border-bottom: 3px solid #ebebeb;
+        display: block;
+        position: relative;
+        top: 1px;
+        width: 100%;
+      }
+    }
+    h4{
+      white-space: pre;
+      padding: 0 0.8em;
+      color: #dcb91c;
+      text-transform: uppercase;
+    }
+  }
+}
