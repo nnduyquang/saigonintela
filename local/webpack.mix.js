@@ -28,6 +28,12 @@ mix.styles([
     .sass('resources/assets/sass/frontend.scss', '../../css/frontend.css').options({processCssUrls: false})
     .sass('resources/assets/sass/trangchu.scss', '../../css/trangchu.css').options({processCssUrls: false})
     .styles('resources/assets/js/scripts.js', '../js/scripts.js')
+    .styles([
+        'bower_components/lightgallery/src/css/lightgallery.css',
+    ], '../css/lightgallery.css')
+    .styles([
+        'bower_components/lightgallery/src/js/lightgallery.js',
+    ], '../js/lightgallery.js')
     .copy([
         'bower_components/bootstrap/fonts/**',
         'bower_components/font-awesome/fonts/**'

@@ -1,12 +1,17 @@
-#thongtin{
+#thong-tin{
   ul{
     li{
       float: left;
       width: 100%;
       min-height: 1em !important;
       margin: 0 0 80px !important;
-      .tt-icon{
+      .tt-left{
         float: right;
+      }
+      .tt-right{
+        float: left;
+      }
+      .tt-icon{
         position: relative;
         font-size: 32px;
         border-width: 0px;
@@ -39,10 +44,18 @@
         border-top: 1em solid;
         border-top-color: inherit !important;
       }
-      .tt-description-left{
+      .tt-d-left{
         text-align: right;
         margin-right: 1em;
         padding-right: 105px;
+      }
+      .tt-d-right{
+        text-align: left;
+        margin-left: 1em;
+        padding-left: 105px;
+      }
+      .tt-description{
+
       }
     }
   }

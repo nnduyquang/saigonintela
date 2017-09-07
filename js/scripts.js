@@ -2,6 +2,7 @@ var plugins = {
     // owlCarousel: $("#slider"),
     menu: $('.sidebar'),
     slider1: $('#slider1'),
+    lightgallery:$('#lightgallery'),
 };
 $(document).ready(function () {
     function sidebar() {
@@ -28,8 +29,17 @@ $(document).ready(function () {
             controlNav: false,
         });
     }
+    function runLightgallery(){
+        plugins.lightgallery.lightGallery({
+            mode: 'lg-fade',
+            thumbnail:true
+        });
+    }
     sidebar();
     if (plugins.slider1.length) {
         runSlider1();
+    }
+    if(plugins.lightgallery.length){
+        runLightgallery();
     }
 });

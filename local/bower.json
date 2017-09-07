@@ -17,6 +17,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
-    "nivo-slider": "*"
+    "nivo-slider": "*",
+    "lightgallery": "^1.6.0"
   }
 }

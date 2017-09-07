@@ -27,15 +27,22 @@
   text-transform: uppercase;
 }
 
-#thongtin ul li {
+#thong-tin ul li {
   float: left;
   width: 100%;
   min-height: 1em !important;
   margin: 0 0 80px !important;
 }
 
-#thongtin ul li .tt-icon {
+#thong-tin ul li .tt-left {
   float: right;
+}
+
+#thong-tin ul li .tt-right {
+  float: left;
+}
+
+#thong-tin ul li .tt-icon {
   position: relative;
   font-size: 32px;
   border-width: 0px;
@@ -49,7 +56,7 @@
   line-height: 1.5em;
 }
 
-#thongtin ul li .tt-icon:before {
+#thong-tin ul li .tt-icon:before {
   content: "";
   position: absolute;
   top: -1em;
@@ -60,7 +67,7 @@
   border-bottom-color: inherit !important;
 }
 
-#thongtin ul li .tt-icon:after {
+#thong-tin ul li .tt-icon:after {
   content: "";
   position: absolute;
   bottom: -1em;
@@ -71,8 +78,95 @@
   border-top-color: inherit !important;
 }
 
-#thongtin ul li .tt-description-left {
+#thong-tin ul li .tt-d-left {
   text-align: right;
   margin-right: 1em;
   padding-right: 105px;
+}
+
+#thong-tin ul li .tt-d-right {
+  text-align: left;
+  margin-left: 1em;
+  padding-left: 105px;
+}
+
+#gioi-thieu {
+  background-color: #dcb91c;
+  padding: 15px 0px 15px 0;
+}
+
+#gioi-thieu .gt-img {
+  border-radius: 50%;
+}
+
+#ban-do {
+  padding: 15px 0px 15px 0;
+}
+
+#ban-do .bd-img {
+  width: 100%;
+}
+
+#vi-tri {
+  padding: 50px 0px 50px 0;
+  background-color: #dcb91c;
+}
+
+#vi-tri ul li {
+  margin-bottom: 15px;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  margin-left: 45px;
+}
+
+#vi-tri ul li:before {
+  content: '\F18E';
+  font-family: FontAwesome;
+  left: -45px;
+  font-size: 35px;
+  color: white;
+  position: absolute;
+}
+
+#tien-ich .ti-top {
+  display: table;
+}
+
+#tien-ich .ti-top span.ti-span-dash {
+  display: table-cell;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+#tien-ich .ti-top span.ti-span-dash .line {
+  height: 1px;
+  border-top: 3px solid #eeee22;
+  border-bottom: 3px solid #ebebeb;
+  display: block;
+  position: relative;
+  top: 1px;
+  width: 100%;
+}
+
+#tien-ich .ti-top h4 {
+  white-space: pre;
+  padding: 0 0.8em;
+  color: #dcb91c;
+  text-transform: uppercase;
+}
+
+#tien-ich .tt-list-img #lightgallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#tien-ich .tt-list-img #lightgallery .ti-img {
+  width: 285px;
+  height: 157px;
 }
