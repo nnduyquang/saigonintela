@@ -1,7 +1,7 @@
-#tien-ich{
-  .ti-top {
+#lien-he {
+  .lh-top {
     display: table;
-    span.ti-span-dash {
+    span.lh-span-dash {
       display: table-cell;
       height: 1px;
       position: relative;
@@ -24,44 +24,34 @@
       text-transform: uppercase;
     }
   }
-  .ti-list-img{
-    #lightgallery{
-      display: flex;
-      flex-wrap: wrap;
-      .ti-img{
-        width: 285px;
-        height: 157px;
-        padding: 0 5px;
-      }
-      .ti-name{
-        display: block;
-        text-align: center;
-        color: white;
-        background-color: #dcb91c;
-        margin: -6px 5px 10px;
-      }
-    }
+  .lh-red{
+    color: red;
+    margin-left: 5px;
+  }
+  p.lh-p-1{
+    font-size: 18px;
+    line-height: 26px;
+    font-style: italic;
+  }
+  p.lh-p-2{
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "Arial";
+  }
+  input,textarea{
+    border: 1px #ddbb1b solid;
+    margin-top: 10px;
   }
 }
 @media screen and(max-width: 768px) {
-  #tien-ich{
-    .ti-top {
-      span.ti-span-dash {
+  #lien-he{
+    .lh-top {
+      span.lh-span-dash {
         display: none;
       }
       h4{
         white-space:normal;
         text-align: center;
-      }
-    }
-    .ti-list-img{
-      #lightgallery{
-        display: block;
-        text-align: center;
-        .ti-img{
-          width: 100%;
-          height: 100%;
-        }
       }
     }
   }

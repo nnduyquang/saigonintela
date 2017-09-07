@@ -19,7 +19,7 @@
 
 </header>
 <div id="blurrMe">
-    {{--@include('frontend.common.m-menu')--}}
+    @include('frontend.menu.m-menu')
     @yield('slider')
     @include('frontend.menu.menu')
 
@@ -27,7 +27,7 @@
         @yield('container')
     {{--</div>--}}
 </div>
-{{--@include('frontend.common.m-sidebar')--}}
+@include('frontend.menu.m-sidebar')
 <div class="footer">
     @include('frontend.footer.index')
 </div>

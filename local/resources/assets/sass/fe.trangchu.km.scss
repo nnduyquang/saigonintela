@@ -25,3 +25,16 @@
     }
   }
 }
+@media screen and(max-width: 768px) {
+  #khuyen-mai{
+    .km-top {
+      span.km-span-dash {
+        display: none;
+      }
+      h4{
+        white-space:normal;
+        text-align: center;
+      }
+    }
+  }
+}

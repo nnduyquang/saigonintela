@@ -17,4 +17,6 @@
     @include('frontend.trangchu.bando')
     @include('frontend.trangchu.vitri')
     @include('frontend.trangchu.tienich')
+    @include('frontend.trangchu.lienhe')
+    @include('frontend.trangchu.tintuc')
 @stop

@@ -1,0 +1,36 @@
+#tin-tuc {
+  .ttda-title {
+    background-color: #000941;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .ttda-wrap {
+    margin-bottom: 10px;
+    .ttda-img {
+      width: 100%;
+    }
+    span {
+      width: 100%;
+      display: block;
+      text-align: justify;
+      background-color: #f9f9f9;
+      color: #717171;
+    }
+  }
+  .tt-view-all {
+    text-align: center;
+    margin-top: 10px;
+    a {
+      border-radius: 3px;
+      border: 1px #ccc solid;
+      padding: 5px 20px;
+      color: #dcb91c;
+      text-transform: uppercase;
+    }
+  }
+
+}

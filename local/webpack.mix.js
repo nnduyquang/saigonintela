@@ -29,14 +29,18 @@ mix.styles([
     .sass('resources/assets/sass/trangchu.scss', '../../css/trangchu.css').options({processCssUrls: false})
     .styles('resources/assets/js/scripts.js', '../js/scripts.js')
     .styles([
-        'bower_components/lightgallery/src/css/lightgallery.css',
+        'bower_components/lightgallery/dist/css/lightgallery.min.css',
+        'bower_components/lightgallery/dist/css/lg-transitions.css',
     ], '../css/lightgallery.css')
     .styles([
-        'bower_components/lightgallery/src/js/lightgallery.js',
+        'bower_components/lightgallery/dist/js/lightgallery.min.js',
+        'bower_components/lightgallery/modules/js/lg-thumbnail.min.js',
+        'bower_components/lightgallery/modules/js/lg-fullscreen.min.js',
     ], '../js/lightgallery.js')
     .copy([
         'bower_components/bootstrap/fonts/**',
-        'bower_components/font-awesome/fonts/**'
+        'bower_components/font-awesome/fonts/**',
+        'bower_components/lightgallery/src/fonts/**'///////////////////////////
     ], '../fonts')
     .copy([
         'bower_components/nivo-slider/themes',
