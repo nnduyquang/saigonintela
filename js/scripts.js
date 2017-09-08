@@ -42,13 +42,23 @@ $(document).ready(function () {
 
     function runScrollOnFix() {
         var wrap = plugins.bottomMenu
-        $(window).on("scroll", function (e) {
-            if ( $(this).scrollTop()  > 850) {
-                wrap.addClass("navbar-fixed-top");
-            } else {
-                wrap.removeClass("navbar-fixed-top");
-            }
-        });
+        if (plugins.slider1.length) {
+            $(window).on("scroll", function (e) {
+                if ($(this).scrollTop() > 850) {
+                    wrap.addClass("navbar-fixed-top");
+                } else {
+                    wrap.removeClass("navbar-fixed-top");
+                }
+            });
+        }else{
+            $(window).on("scroll", function (e) {
+                if ($(this).scrollTop() > 50) {
+                    wrap.addClass("navbar-fixed-top");
+                } else {
+                    wrap.removeClass("navbar-fixed-top");
+                }
+            });
+        }
     }
 
     sidebar();

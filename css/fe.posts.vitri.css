@@ -1,0 +1,23 @@
+#posts-vitri-content img {
+  width: 100%;
+}
+
+#posts-vitri-content .posts-vitri-content-img {
+  width: 100%;
+  height: 285px;
+}
+
+#posts-vitri-content .p-vt-w-title {
+  border: 3px #ddbb1b solid;
+}
+
+#posts-vitri-content .p-vt-w-title h1.p-vt-title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 36px;
+  background: #ddbb1b;
+  color: #fff;
+  border: 3px #fff solid;
+  text-indent: 10px;
+  font-weight: bold;
+}

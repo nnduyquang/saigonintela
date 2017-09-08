@@ -18,6 +18,8 @@
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "nivo-slider": "*",
-    "lightgallery": "^1.6.0"
+    "lightgallery": "^1.6.0",
+    "AdminLTE": "admin-lte#^2.3.11",
+    "ckeditor": "#full/latest"
   }
 }

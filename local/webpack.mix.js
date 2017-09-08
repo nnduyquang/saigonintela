@@ -46,3 +46,48 @@ mix.styles([
         'bower_components/nivo-slider/themes',
     ], '../css/themes', false)
 
+    //LOGIN 1 JS
+    .styles([
+        'resources/assets/js/login1.js',
+    ], '../js/login.js')
+    .styles('resources/assets/js/ulti.js','../js/ulti.js')
+
+    //LOGIN 1 CSS
+    .styles([
+        'resources/assets/sass/login1.scss',
+    ], '../css/login.css')
+    //CSS CORE BACKEND
+    .styles([
+        'bower_components/AdminLTE/dist/css/AdminLTE.min.css',
+        'bower_components/AdminLTE/dist/css/skins/skin-blue.min.css'
+    ], '../css/core.backend.css')
+    //JS CORE BACKEND
+    .styles([
+        'bower_components/AdminLTE/dist/js/app.min.js',
+    ], '../js/core.backend.js')
+    //CSS VÀ JS SLIDER
+    .styles([
+        'resources/assets/js/be.config.slider.js',
+    ], '../js/be.config.slider.js')
+    .sass('resources/assets/sass/be.config.slider.scss', '../../css/be.config.slider.css')
+    .styles([
+        'resources/assets/js/be.news.js',
+    ], '../js/be.news.js')
+    .styles([
+        'resources/assets/js/be.posts.vitri.js',
+    ], '../js/be.posts.vitri.js')
+
+    .sass('resources/assets/sass/fe.lienhe.scss', '../../css/fe.lienhe.css')
+// CKEDITOR CHỈ CHẠY ĐOẠN NÀY 1 LẦN
+// ===================
+// .copy('bower_components/ckeditor/adapters', '../js/ckeditor/adapters',false)
+// .copy('bower_components/ckeditor/lang', '../js/ckeditor/lang',false)
+// .copy('bower_components/ckeditor/skins', '../js/ckeditor/skins',false)
+// .copy([
+//     'bower_components/ckeditor/ckeditor.js',
+//     'bower_components/ckeditor/config.js',
+//     'bower_components/ckeditor/contents.css',
+//     'bower_components/ckeditor/styles.js'
+// ], '../js/ckeditor',false)
+// .copy('bower_components/ckeditor/plugins', '../js/ckeditor/plugins',false)
+
