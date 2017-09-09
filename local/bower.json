@@ -20,6 +20,7 @@
     "nivo-slider": "*",
     "lightgallery": "^1.6.0",
     "AdminLTE": "admin-lte#^2.3.11",
-    "ckeditor": "#full/latest"
+    "ckeditor": "#full/latest",
+    "bootstrap-toggle": "^2.2.2"
   }
 }

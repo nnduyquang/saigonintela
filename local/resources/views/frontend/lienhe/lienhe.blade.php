@@ -30,7 +30,7 @@
                     <i class="fa fa-exclamation-circle errorInfo" rel="popover" data-toggle="tooltip" data-placement="top" title="Tên Không Được Để Trống"></i>
                 </div>
                 <div class="col-lg-12">
-                    <button id="btnSendMail" type="button" class="btn btn-contact">GỬI BÁO GIÁ<i
+                    <button id="btnSendMail" type="button" class="btn btn-contact">GỬI THÔNG TIN<i
                                 class="fa fa-spinner fa-spin fa-3x fa-fw loadingSending"></i><i class="fa fa-check-circle successSending" aria-hidden="true"></i></button>
                 </div>
             </div>

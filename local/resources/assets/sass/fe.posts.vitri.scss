@@ -7,16 +7,24 @@
     height: 285px;
   }
   .p-vt-w-title {
-    border: 3px #ddbb1b solid;
+    border: 3px #f47d18 solid;
     h1.p-vt-title {
       margin: 0;
       font-size: 18px;
       line-height: 36px;
-      background: #ddbb1b;
+      background: #f47d18;
       color: #fff;
       border: 3px #fff solid;
       text-indent: 10px;
       font-weight: bold;
+    }
+  }
+  .p-d-vitri-bot{
+    .p-d-vitri-bot-w{
+      background: none repeat scroll 0 0 #fff5b4;
+      border: 2px dashed #3366ff;
+      margin-bottom: 10px;
+      padding: 10px;
     }
   }
 }

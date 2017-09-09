@@ -71,13 +71,38 @@ mix.styles([
     ], '../js/be.config.slider.js')
     .sass('resources/assets/sass/be.config.slider.scss', '../../css/be.config.slider.css')
     .styles([
+        'resources/assets/js/be.config.tienich.js',
+    ], '../js/be.config.tienich.js')
+    .sass('resources/assets/sass/be.config.tienich.scss', '../../css/be.config.tienich.css')
+
+    .styles([
         'resources/assets/js/be.news.js',
     ], '../js/be.news.js')
     .styles([
         'resources/assets/js/be.posts.vitri.js',
     ], '../js/be.posts.vitri.js')
+    .styles([
+        'resources/assets/js/be.posts.trangchu.js',
+    ], '../js/be.posts.trangchu.js')
+    .styles([
+        'resources/assets/js/be.posts.canho.js',
+    ], '../js/be.posts.canho.js')
+    .styles([
+        'resources/assets/js/be.posts.thietke.js',
+    ], '../js/be.posts.canho.js')
+    .styles([
+        'bower_components/bootstrap-toggle/css/bootstrap-toggle.min.css',
+    ], '../css/bootstrap-toggle.min.css')
+    .styles([
+        'bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js',
+    ], '../js/bootstrap-toggle.min.js')
 
-    .sass('resources/assets/sass/fe.lienhe.scss', '../../css/fe.lienhe.css')
+    .sass('resources/assets/sass/fe.posts.thietke.scss', '../../css/fe.posts.thietke.css')
+    .sass('resources/assets/sass/fe.posts.canho.scss', '../../css/fe.posts.canho.css')
+    .sass('resources/assets/sass/fe.posts.vitri.scss', '../../css/fe.posts.vitri.css')
+    .sass('resources/assets/sass/fe.tintuc.index.scss', '../../css/fe.tintuc.index.css').options({processCssUrls: false})
+    .sass('resources/assets/sass/fe.tintuc.detail.scss', '../../css/fe.tintuc.detail.css').options({processCssUrls: false})
+    // .sass('resources/assets/sass/fe.lienhe.scss', '../../css/fe.lienhe.css').options({processCssUrls: false})
 // CKEDITOR CHỈ CHẠY ĐOẠN NÀY 1 LẦN
 // ===================
 // .copy('bower_components/ckeditor/adapters', '../js/ckeditor/adapters',false)

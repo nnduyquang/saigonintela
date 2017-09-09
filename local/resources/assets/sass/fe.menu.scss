@@ -1,6 +1,6 @@
 .menu-desktop {
   .header-menu {
-    background: #dcb91c;
+    background: #e10717;
     ul.sub-menu {
       float: right;
       li {
@@ -8,7 +8,7 @@
         a {
           padding: 0 17px;
           line-height: 40px;
-          color: #333;
+          color: white;
           font-weight: bold;
         }
         a.sm-icon-phone{
@@ -32,7 +32,7 @@
     margin-bottom: 1px;
     min-width: 1200px;
     margin-bottom: 0;
-    background: #000941;
+    background: #f47d18;
     //position: relative;
     ul.main-menu {
       float: right;
@@ -54,7 +54,7 @@
         }
       }
       li:hover {
-        background-color: #dcb91c;
+        background-color: #E89801;
         color: #ddd;
       }
       li:hover > ul {
@@ -65,7 +65,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background: #dcb91c;
+        background: #E89801;
         padding: 0;
         z-index: 9;
         li {

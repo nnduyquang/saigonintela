@@ -15,6 +15,15 @@
         <div class="col-md-12">
             {!! $posts->content !!}
         </div>
+        <div class="col-md-12 p-d-vitri-bot">
+            <div class="container">
+                <div class="p-d-vitri-bot-w">
+                    <p style="text-align: center;">Mọi chi tiết về <strong>dự án TNR THE GOLDVIEW</strong> vui lòng liên
+                        hệ<strong>: <span style="color: #ff0000;">0933 390 860 <br>(PKD Chủ Đầu Tư Căn Hộ -TNR THE GOLDVIEW)</span></strong>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="empty-space-32 col-md-12"></div>

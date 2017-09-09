@@ -9,7 +9,7 @@
       width: 50%;
       .line {
         height: 1px;
-        border-top: 3px solid #eeee22;
+        border-top: 3px solid #f47d18;
         border-bottom: 3px solid #ebebeb;
         display: block;
         position: relative;
@@ -20,7 +20,7 @@
     h4{
       white-space: pre;
       padding: 0 0.8em;
-      color: #dcb91c;
+      color: #f47d18;
       text-transform: uppercase;
     }
   }
@@ -39,7 +39,7 @@
     font-family: "Arial";
   }
   input,textarea{
-    border: 1px #ddbb1b solid;
+    border: 1px #f47d18 solid;
     margin-top: 10px;
   }
 }

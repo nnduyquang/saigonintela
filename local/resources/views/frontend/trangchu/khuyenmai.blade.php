@@ -6,7 +6,7 @@
                 <span class="km-span-dash">
                     <span class="line"></span>
                 </span>
-            <h4>DỰ ÁN PHỨC HỢP BẬC NHẤT TNR THE GOLDVIEW</h4>
+            <h4>SÀI GÒN INTELA CĂN HỘ THÔNG MINH VEN SÔNG</h4>
             <span class="km-span-dash">
                     <span class="line"></span>
                 </span>
@@ -18,7 +18,11 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <div class="row">
-                noi dung
+                @foreach($posts as $key=>$post)
+                    @if($post->name=='trangchu-contents-km')
+                        {!! $post->content !!}
+                    @endif
+                @endforeach
                 <div class="dash-full-width"></div>
             </div>
         </div>

@@ -31,14 +31,14 @@ class NewsRequest extends FormRequest
             case 'POST': {
                 return [
                     'title' => 'required',
-                    'content'=>'required'
+                    'content-news'=>'required'
                 ];
             }
             case 'PUT':
             case 'PATCH': {
                 return [
                     'title' => 'required',
-                    'content'=>'required'
+                    'content-news'=>'required'
                 ];
             }
         }
@@ -47,7 +47,7 @@ class NewsRequest extends FormRequest
     {
         return [
             'title.required' => 'Tiêu Đề Không Để Trống',
-            'content.required' => 'Mời Nhập Nội Dung Tin Tức',
+            'content-news.required' => 'Mời Nhập Nội Dung Tin Tức',
         ];
     }
     public function withValidator($validator)

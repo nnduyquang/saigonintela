@@ -11,13 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.trangchu.index');
-});
+//Route::get('/', function () {
+//    return view('frontend.trangchu.index');
+//});
+Route::get('/','PostsController@getFrontendContentTrangChu');
 Route::get('/category', function () {
     return view('frontend.menu.m-category');
 });
 Route::get('/vi-tri', 'PostsController@getFrontendContentVitri');
+Route::get('/can-ho', 'PostsController@getFrontendContentCanHo');
+Route::get('/thiet-ke', 'PostsController@getFrontendContentThietKe');
+Route::get('/lien-he',function(){
+    return view('frontend.lienhe.index');
+});
+Route::get('/tin-tuc', 'NewsController@getAllNews');
+Route::get('/tin-tuc/{path}', 'NewsController@getDetailNews');
 
 Route::get('/sml_login', function () {
     return view('backend.login.login1');
@@ -66,8 +74,28 @@ Route::group(['middleware' => ['auth']], function () {
     Route::patch('sml_admin/slider/{id}', ['as' => 'config.slider.update', 'uses' => 'SliderController@update', 'middleware' => ['permission:config-edit']]);
     Route::delete('sml_admin/slider/{id}', ['as' => 'config.slider.destroy', 'uses' => 'SliderController@destroy', 'middleware' => ['permission:config-delete']]);
 
+    //--TIỆN ÍCH--//
+    Route::get('sml_admin/tien-ich', ['as' => 'config.tienich.index', 'uses' => 'TienIchController@index', 'middleware' => ['permission:config-list|config-create|config-edit|config-delete']]);
+    Route::post('sml_admin/tien-ich/create', ['as' => 'config.tienich.store', 'uses' => 'TienIchController@store', 'middleware' => ['permission:config-create']]);
+    Route::get('sml_admin/tien-ich/create', ['as' => 'config.tienich.create', 'uses' => 'TienIchController@create', 'middleware' => ['permission:config-create']]);
+    Route::get('sml_admin/tien-ich/{id}/edit', ['as' => 'config.tienich.edit', 'uses' => 'TienIchController@edit', 'middleware' => ['permission:config-edit']]);
+    Route::patch('sml_admin/tien-ich/{id}', ['as' => 'config.tienich.update', 'uses' => 'TienIchController@update', 'middleware' => ['permission:config-edit']]);
+    Route::delete('sml_admin/tien-ich/{id}', ['as' => 'config.tienich.destroy', 'uses' => 'TienIchController@destroy', 'middleware' => ['permission:config-delete']]);
+
     //POST
     //--VỊ TRÍ--//
     Route::get('sml_admin/posts/vi-tri', ['as' => 'posts.vitri.index', 'uses' => 'PostsController@getPostViTriContent']);
     Route::post('sml_admin/posts/vi-tri', ['as' => 'posts.vitri.store', 'uses' => 'PostsController@savePostViTriContent']);
+
+    //--TRANG CHỦ--//
+    Route::get('sml_admin/posts/trang-chu', ['as' => 'posts.trangchu.index', 'uses' => 'PostsController@getPostTrangChuContent']);
+    Route::post('sml_admin/posts/trang-chu', ['as' => 'posts.trangchu.store', 'uses' => 'PostsController@savePostTrangChuContent']);
+
+    //--CĂN HỘ--//
+    Route::get('sml_admin/posts/can-ho', ['as' => 'posts.canho.index', 'uses' => 'PostsController@getPostCanHoContent']);
+    Route::post('sml_admin/posts/can-ho', ['as' => 'posts.canho.store', 'uses' => 'PostsController@savePostCanHoContent']);
+
+    //--THIẾT KẾ--//
+    Route::get('sml_admin/posts/thiet-ke', ['as' => 'posts.thietke.index', 'uses' => 'PostsController@getPostThietKeContent']);
+    Route::post('sml_admin/posts/thiet-ke', ['as' => 'posts.thietke.store', 'uses' => 'PostsController@savePostThietKeContent']);
 });

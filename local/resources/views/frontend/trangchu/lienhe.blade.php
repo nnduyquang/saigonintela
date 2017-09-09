@@ -13,7 +13,13 @@
         <div class="empty-space-32"></div>
         <p class="lh-p-1">Quí khách vui lòng nhập chính xác thông tin vào form liên hệ bên cạnh để chúng tôi có thể tư vấn tốt nhất.</p>
         <p class="lh-p-2" style="text-align: center;">—–oOo—–</p>
-        <p class="lh-p-3" style="text-align: center;">nội-dung</p>
+        <p class="lh-p-3" style="text-align: center;">
+            @foreach($posts as $key=>$post)
+                @if($post->name=='trangchu-contents-lh')
+                    {!! $post->content !!}
+                @endif
+            @endforeach
+        </p>
     </div>
     <div class="col-md-6">
         <p class="lh-p-4">Chúng tôi sẽ phản hồi trong vòng 5 phút đến 1 giờ sau khi nhận yêu cầu của quí vị</p>

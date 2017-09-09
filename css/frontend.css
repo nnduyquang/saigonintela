@@ -409,7 +409,7 @@ This class is added to the container
 }
 
 .menu-desktop .header-menu {
-  background: #dcb91c;
+  background: #e10717;
 }
 
 .menu-desktop .header-menu ul.sub-menu {
@@ -423,7 +423,7 @@ This class is added to the container
 .menu-desktop .header-menu ul.sub-menu li a {
   padding: 0 17px;
   line-height: 40px;
-  color: #333;
+  color: white;
   font-weight: bold;
 }
 
@@ -447,7 +447,7 @@ This class is added to the container
   margin-bottom: 1px;
   min-width: 1200px;
   margin-bottom: 0;
-  background: #000941;
+  background: #f47d18;
 }
 
 .menu-desktop .bottom-menu ul.main-menu {
@@ -476,7 +476,7 @@ This class is added to the container
 }
 
 .menu-desktop .bottom-menu ul.main-menu li:hover {
-  background-color: #dcb91c;
+  background-color: #E89801;
   color: #ddd;
 }
 
@@ -489,7 +489,7 @@ This class is added to the container
   position: absolute;
   top: 100%;
   left: 0;
-  background: #dcb91c;
+  background: #E89801;
   padding: 0;
   z-index: 9;
 }
@@ -515,8 +515,8 @@ This class is added to the container
 #footer .f-hotline {
   padding-top: 18px;
   padding-bottom: 18px;
-  background-color: #dcb91c;
-  color: #717171;
+  background-color: #f47d18;
+  color: white;
 }
 
 #footer .f-hotline span {

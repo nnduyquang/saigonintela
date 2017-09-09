@@ -12,7 +12,7 @@
 
 #khuyen-mai .km-top span.km-span-dash .line {
   height: 1px;
-  border-top: 3px solid #eeee22;
+  border-top: 3px solid #f47d18;
   border-bottom: 3px solid #ebebeb;
   display: block;
   position: relative;
@@ -23,7 +23,7 @@
 #khuyen-mai .km-top h4 {
   white-space: pre;
   padding: 0 0.8em;
-  color: #dcb91c;
+  color: #f47d18;
   text-transform: uppercase;
 }
 
@@ -57,9 +57,9 @@
   font-size: 32px;
   border-width: 0px;
   border-style: none;
-  background: #dcb91c;
+  background: #f47d18;
   color: #ffffff;
-  border-color: #dcb91c;
+  border-color: #f47d18;
   width: 3em;
   text-align: center;
   height: 1.5em;
@@ -114,7 +114,7 @@
 }
 
 #gioi-thieu {
-  background-color: #dcb91c;
+  background-color: #f47d18;
   padding: 15px 0px 15px 0;
 }
 
@@ -133,7 +133,7 @@
 
 #vi-tri {
   padding: 50px 0px 50px 0;
-  background-color: #dcb91c;
+  background-color: #f47d18;
 }
 
 #vi-tri ul li {
@@ -167,7 +167,7 @@
 
 #tien-ich .ti-top span.ti-span-dash .line {
   height: 1px;
-  border-top: 3px solid #eeee22;
+  border-top: 3px solid #f47d18;
   border-bottom: 3px solid #ebebeb;
   display: block;
   position: relative;
@@ -178,7 +178,7 @@
 #tien-ich .ti-top h4 {
   white-space: pre;
   padding: 0 0.8em;
-  color: #dcb91c;
+  color: #f47d18;
   text-transform: uppercase;
 }
 
@@ -200,7 +200,7 @@
   display: block;
   text-align: center;
   color: white;
-  background-color: #dcb91c;
+  background-color: #f47d18;
   margin: -6px 5px 10px;
 }
 
@@ -236,7 +236,7 @@
 
 #lien-he .lh-top span.lh-span-dash .line {
   height: 1px;
-  border-top: 3px solid #eeee22;
+  border-top: 3px solid #f47d18;
   border-bottom: 3px solid #ebebeb;
   display: block;
   position: relative;
@@ -247,7 +247,7 @@
 #lien-he .lh-top h4 {
   white-space: pre;
   padding: 0 0.8em;
-  color: #dcb91c;
+  color: #f47d18;
   text-transform: uppercase;
 }
 
@@ -269,7 +269,7 @@
 }
 
 #lien-he input, #lien-he textarea {
-  border: 1px #ddbb1b solid;
+  border: 1px #f47d18 solid;
   margin-top: 10px;
 }
 
@@ -284,7 +284,7 @@
 }
 
 #tin-tuc .ttda-title {
-  background-color: #000941;
+  background-color: #f47d18;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 5px;
@@ -318,6 +318,6 @@
   border-radius: 3px;
   border: 1px #ccc solid;
   padding: 5px 20px;
-  color: #dcb91c;
+  color: #f47d18;
   text-transform: uppercase;
 }

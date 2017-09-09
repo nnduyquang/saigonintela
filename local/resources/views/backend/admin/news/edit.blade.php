@@ -1,8 +1,10 @@
 @extends('backend.admin.master')
 @section('styles')
     {{ Html::style('css/be.news.css') }}
+    {{ Html::style('css/bootstrap-toggle.min.css') }}
 @stop
 @section('scripts')
+    {{ Html::script('js/bootstrap-toggle.min.js',array('async' => 'async') ) }}
     {{ Html::script('js/ulti.js',array('async' => 'async') ) }}
     {{ Html::script('js/be.news.js',array('async' => 'async') ) }}
 @stop
@@ -38,7 +40,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Nội Dung:</strong>
-                {!! Form::textarea('content-news',null, array('placeholder' => 'Nội Dung','id'=>'content','class' => 'form-control','rows'=>'20','style'=>'resize:none')) !!}
+                {!! Form::textarea('content-news',$news->content, array('placeholder' => 'Nội Dung','id'=>'content-news','class' => 'form-control','rows'=>'20','style'=>'resize:none')) !!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -54,6 +56,12 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 {{ Html::image($news->image,'',array('id'=>'showHinhDaiDien','class'=>'showHinh'))}}
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <strong>Tình Trạng:</strong>
+                <input {{$news->isPost==1?'checked':''}}  name="news_is_post" data-on="Đăng" data-off="Không Đăng" type="checkbox"  data-toggle="toggle">
             </div>
         </div>
 

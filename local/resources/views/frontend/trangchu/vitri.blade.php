@@ -1,7 +1,11 @@
 <div id="vi-tri" class="col-md-12">
     <div class="container">
         <div class="col-md-8">
-            noi-dung
+            @foreach($posts as $key=>$post)
+                @if($post->name=='trangchu-contents-vt')
+                    {!! $post->content !!}
+                @endif
+            @endforeach
         </div>
         <div class="col-md-4">
             <ul>

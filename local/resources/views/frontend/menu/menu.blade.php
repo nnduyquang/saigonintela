@@ -10,21 +10,22 @@
     <div class="col-md-12 bottom-menu">
         <h1></h1>
         <ul class="main-menu">
+            <li><a href="{{URL::to('/')}}">Trang Chủ</a></li>
             <li><a href="">Bảng Giá</a></li>
             {{--<li><a href="">Chuyển Nhượng</a></li>--}}
-            <li><a href="#">Loại Căn Hộ</a>
-                <ul>
-                    <li><a href="">1 Phòng Ngủ</a></li>
-                    <li><a href="">2 Phòng Ngủ</a></li>
-                    <li><a href="">3 Phòng Ngủ</a></li>
-                </ul>
+            <li><a href="{{URL::to('can-ho')}}">Loại Căn Hộ</a>
+                {{--<ul>--}}
+                    {{--<li><a href="">1 Phòng Ngủ</a></li>--}}
+                    {{--<li><a href="">2 Phòng Ngủ</a></li>--}}
+                    {{--<li><a href="">3 Phòng Ngủ</a></li>--}}
+                {{--</ul>--}}
             </li>
-            <li><a href="">Thiết Kế</a></li>
+            <li><a href="{{URL::to('thiet-ke')}}">Thiết Kế</a></li>
             <li><a href="{{URL::to('vi-tri')}}">Vị Trí</a></li>
             <li><a href="">Tiện Ích</a></li>
-            <li><a href="">Tin Tức</a></li>
+            <li><a href="{{URL::to('tin-tuc')}}">Tin Tức</a></li>
             <li><a href="">Video</a></li>
-            <li><a href="">Liên Hệ</a></li>
+            <li><a href="{{URL::to('lien-he')}}">Liên Hệ</a></li>
         </ul>
     </div>
 </div>

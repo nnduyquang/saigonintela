@@ -42,10 +42,16 @@ class NewsController extends Controller
         $news = new News();
         $title = $request->input('title');
         $content = $request->input('content-news');
+        $isPost = $request->input('news_is_post');
+        if ($isPost) {
+            $news->isPost = 1;
+        } else {
+            $news->isPost = 0;
+        }
         $image = $request->input('image');
         $image = substr($image, strpos($image, 'images'), strlen($image) - 1);
         $news->title = $title;
-        $news->path=chuyen_chuoi_thanh_path($title);
+        $news->path = chuyen_chuoi_thanh_path($title);
         $news->content = $content;
         $news->image = $image;
         $news->user_id = Auth::user()->id;
@@ -89,13 +95,19 @@ class NewsController extends Controller
     {
         $news = News::find($id);
         $title = $request->input('title');
-        $content = $request->input('content');
+        $content = $request->input('content-news');
+        $isPost = $request->input('news_is_post');
+        if ($isPost) {
+            $news->isPost = 1;
+        } else {
+            $news->isPost = 0;
+        }
         $image = $request->input('image');
         $image = substr($image, strpos($image, 'images'), strlen($image) - 1);
         $news->title = $title;
         $news->content = $content;
         $news->image = $image;
-        $news->path=chuyen_chuoi_thanh_path($title);
+        $news->path = chuyen_chuoi_thanh_path($title);
         $news->user_id = Auth::user()->id;
         $news->save();
         return redirect()->route('news.index')
@@ -118,9 +130,24 @@ class NewsController extends Controller
 
     public function search(Request $request)
     {
-        $keywords = preg_replace('/\s+/', ' ',$request->input('txtSearch'));
+        $keywords = preg_replace('/\s+/', ' ', $request->input('txtSearch'));
         $news = News::where('title', 'like', '%' . $keywords . '%')->orderBy('id', 'DESC')->paginate(5);
         return view('backend.admin.news.index', compact('news', 'keywords'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
+    }
+
+    public function getAllNews()
+    {
+        $news = News::where('isPost', '=', '1')->orderBy('id', 'DESC')->get();
+        foreach ($news as $data) {
+            $data->content = cat_chuoi_dai_thanh_ngan(bo_the_html_trong_chuoi($data->content), 400);
+        }
+        return view('frontend.tintuc.index', compact('news'));
+    }
+
+    public function getDetailNews($path)
+    {
+        $news = News::where('path', 'like','%'.$path.'%')->first();
+        return view('frontend.tintuc.detail', compact('news'));
     }
 }

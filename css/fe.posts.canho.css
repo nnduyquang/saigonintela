@@ -1,0 +1,30 @@
+#posts-canho-content img {
+  width: 100%;
+}
+
+#posts-canho-content .posts-canho-content-img {
+  width: 100%;
+  height: 285px;
+}
+
+#posts-canho-content .p-ch-w-title {
+  border: 3px #f47d18 solid;
+}
+
+#posts-canho-content .p-ch-w-title h1.p-ch-title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 36px;
+  background: #f47d18;
+  color: #fff;
+  border: 3px #fff solid;
+  text-indent: 10px;
+  font-weight: bold;
+}
+
+#posts-canho-content .p-d-canho-bot .p-d-canho-bot-w {
+  background: none repeat scroll 0 0 #fff5b4;
+  border: 2px dashed #3366ff;
+  margin-bottom: 10px;
+  padding: 10px;
+}

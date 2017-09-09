@@ -23,7 +23,7 @@ $_CONFIG = array(
 // GENERAL SETTINGS
 
     'disabled' => false,
-    'uploadURL' => 'http://localhost:8080/smartlinksv2/images/uploads/',
+    'uploadURL' => 'http://localhost:8080/saigonintela/images/uploads/',
     'uploadDir' => "",
     'theme' => "default",
 

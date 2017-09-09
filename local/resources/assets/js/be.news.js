@@ -30,8 +30,8 @@ function selectFileWithCKFinder(elementId) {
         callBack: function (url) {
             var output = document.getElementById(elementId);
             output.value = url;
-            $('#showEmpImage').show();
-            $('#showEmpImage').fadeIn("fast").attr('src', url);
+            $('#showHinhDaiDien').show();
+            $('#showHinhDaiDien').fadeIn("fast").attr('src', url);
             window.KCFinder = null;
         }
     };
