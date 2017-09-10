@@ -50,7 +50,7 @@ mix.styles([
     .styles([
         'resources/assets/js/login1.js',
     ], '../js/login.js')
-    .styles('resources/assets/js/ulti.js','../js/ulti.js')
+    .styles('resources/assets/js/ulti.js', '../js/ulti.js')
 
     //LOGIN 1 CSS
     .styles([
@@ -74,6 +74,9 @@ mix.styles([
         'resources/assets/js/be.config.tienich.js',
     ], '../js/be.config.tienich.js')
     .sass('resources/assets/sass/be.config.tienich.scss', '../../css/be.config.tienich.css')
+    .styles([
+        'resources/assets/js/be.config.js',
+    ], '../js/be.config.js')
 
     .styles([
         'resources/assets/js/be.news.js',
@@ -89,7 +92,10 @@ mix.styles([
     ], '../js/be.posts.canho.js')
     .styles([
         'resources/assets/js/be.posts.thietke.js',
-    ], '../js/be.posts.canho.js')
+    ], '../js/be.posts.thietke.js')
+    .styles([
+        'resources/assets/js/be.posts.tienich.js',
+    ], '../js/be.posts.tienich.js')
     .styles([
         'bower_components/bootstrap-toggle/css/bootstrap-toggle.min.css',
     ], '../css/bootstrap-toggle.min.css')
@@ -97,12 +103,10 @@ mix.styles([
         'bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js',
     ], '../js/bootstrap-toggle.min.js')
 
-    .sass('resources/assets/sass/fe.posts.thietke.scss', '../../css/fe.posts.thietke.css')
-    .sass('resources/assets/sass/fe.posts.canho.scss', '../../css/fe.posts.canho.css')
-    .sass('resources/assets/sass/fe.posts.vitri.scss', '../../css/fe.posts.vitri.css')
+    .sass('resources/assets/sass/fe.posts.scss', '../../css/fe.posts.css')
     .sass('resources/assets/sass/fe.tintuc.index.scss', '../../css/fe.tintuc.index.css').options({processCssUrls: false})
     .sass('resources/assets/sass/fe.tintuc.detail.scss', '../../css/fe.tintuc.detail.css').options({processCssUrls: false})
-    // .sass('resources/assets/sass/fe.lienhe.scss', '../../css/fe.lienhe.css').options({processCssUrls: false})
+    .sass('resources/assets/sass/fe.lienhe.scss', '../../css/fe.lienhe.css').options({processCssUrls: false})
 // CKEDITOR CHỈ CHẠY ĐOẠN NÀY 1 LẦN
 // ===================
 // .copy('bower_components/ckeditor/adapters', '../js/ckeditor/adapters',false)

@@ -22,5 +22,13 @@
                 </div>
             </div>
         @endforeach
+        <div class="empty-space-32 col-md-12"></div>
+        <div class="col-md-12 p-tintuc-post-bot">
+            <div class="container">
+                <div class="p-tintuc-post-bot-w">
+                    {!! $diachi->content !!}
+                </div>
+            </div>
+        </div>
     </div>
 </div>

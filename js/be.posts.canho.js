@@ -1,5 +1,5 @@
-if ($('#content-thietke').length) {
-    CKEDITOR.replace('content-thietke', {
+if ($('#content-canho').length) {
+    CKEDITOR.replace('content-canho', {
         height: 800,
         language: 'vi',
         format_tags: 'p;h1;h2;h3;pre',

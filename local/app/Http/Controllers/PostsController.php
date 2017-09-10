@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Config;
 use App\News;
 use App\Post;
+use App\Slider;
 use App\TienIch;
 use Illuminate\Http\Request;
 
@@ -24,7 +26,9 @@ class PostsController extends Controller
     }
     public function getFrontendContentVitri(){
         $posts = Post::whereIn('name', ['vitri-contents'])->orderBy('order')->first();
-        return view('frontend.vitri.index', compact('posts'));
+        $diachi=Config::whereIn('name',['cf-address-post'])->first();
+        $phone=Config::whereIn('name',['cf-phone'])->first();
+        return view('frontend.vitri.index', compact('posts','diachi','phone'));
     }
 
     //Trang Chủ//
@@ -68,7 +72,9 @@ class PostsController extends Controller
         $posts = Post::whereIn('name', ['trangchu-contents-km','trangchu-contents-gt','trangchu-contents-vt','trangchu-contents-lh'])->orderBy('order')->get();
         $tienichs = TienIch::where('tienich_is_active', '=', '1')->orderBy('tienich_order', 'ASC')->get();
         $tintucs=News::where('isPost', '=', '1')->orderBy('id', 'DESC')->get();
-        return view('frontend.trangchu.index', compact('posts','tienichs','tintucs'));
+        $sliders=Slider::where('slider_is_active', '=', '1')->orderBy('slider_order', 'ASC')->get();
+        $phone=Config::whereIn('name',['cf-phone'])->first();
+        return view('frontend.trangchu.index', compact('posts','tienichs','tintucs','sliders','phone'));
     }
 
     //Căn Hộ//
@@ -86,7 +92,9 @@ class PostsController extends Controller
     }
     public function getFrontendContentCanHo(){
         $posts = Post::whereIn('name', ['canho-contents'])->orderBy('order')->first();
-        return view('frontend.canho.index', compact('posts'));
+        $diachi=Config::whereIn('name',['cf-address-post'])->first();
+        $phone=Config::whereIn('name',['cf-phone'])->first();
+        return view('frontend.canho.index', compact('posts','diachi','phone'));
     }
 
     //Thiết Kế//
@@ -104,6 +112,33 @@ class PostsController extends Controller
     }
     public function getFrontendContentThietke(){
         $posts = Post::whereIn('name', ['thietke-contents'])->orderBy('order')->first();
-        return view('frontend.thietke.index', compact('posts'));
+        $diachi=Config::whereIn('name',['cf-address-post'])->first();
+        $phone=Config::whereIn('name',['cf-phone'])->first();
+        return view('frontend.thietke.index', compact('posts','diachi','phone'));
+    }
+
+    //Tiện Ích//
+    public function getPostTienIchContent(){
+        $posts = Post::whereIn('name', ['tienich-contents'])->orderBy('order')->get();
+        return view('backend.admin.posts.tienich', compact('posts'));
+    }
+    public function savePostTienIchContent(Request $request){
+        $contentTienIch = $request->input('content-tienich');
+        $post = Post::where('name', 'tienich-contents')->first();
+        $post->content=$contentTienIch;
+        $post->save();
+        return redirect()->route('posts.tienich.index')
+            ->with('success', 'Bài Viết Tiện Ích Dự Án Lưu Thành Công');
+    }
+    public function getFrontendContentTienIch(){
+        $posts = Post::whereIn('name', ['tienich-contents'])->orderBy('order')->first();
+        $diachi=Config::whereIn('name',['cf-address-post'])->first();
+        $phone=Config::whereIn('name',['cf-phone'])->first();
+        return view('frontend.tienich.index', compact('posts','diachi','phone'));
+    }
+    //Liên Hệ//
+    public function getFrontendContentLienHe(){
+        $phone=Config::whereIn('name',['cf-phone'])->first();
+        return view('frontend.lienhe.index', compact('phone'));
     }
 }

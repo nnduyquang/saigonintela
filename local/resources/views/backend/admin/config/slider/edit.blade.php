@@ -5,6 +5,7 @@
 @stop
 @section('scripts')
     {{ Html::script('js/bootstrap-toggle.min.js',array('async' => 'async') ) }}
+    {{ Html::script('js/ulti.js',array('async' => 'async') ) }}
     {{ Html::script('js/be.config.slider.js',array('async' => 'async') ) }}
 @stop
 @section('container')

@@ -9,10 +9,10 @@
         </div>
         <div class="col-md-4">
             <ul>
-                <li>Đến sân vận động Thống Nhất chỉ 5 phút</li>
-                <li>Đến sân vận động Thống Nhất chỉ 5 phút</li>
-                <li>Đến trung tâm tài chính Tp. Hồ Chí Minh chỉ 3 phút</li>
-                <li>Đến sân vận động Thống Nhất chỉ 5 phút</li>
+                <li>Chưa đầy 5 phút đến trung tâm Quận 7</li>
+                <li>Chỉ 08 phút đến khu đô thị Phú Mỹ Hưng</li>
+                <li>Mất 15 phút đến Quận 4, Quận 1 và Quận 3</li>
+                <li>Thuận tiện kết nối vùng và đi lại tại các khu vực tiếp giáp Sài Gòn.</li>
             </ul>
         </div>
     </div>

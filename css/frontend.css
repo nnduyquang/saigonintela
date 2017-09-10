@@ -408,6 +408,17 @@ This class is added to the container
   }
 }
 
+@media screen and (min-width: 768px) {
+  .nivoSlider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .menu-desktop .header-menu {
   background: #e10717;
 }
@@ -445,7 +456,6 @@ This class is added to the container
   border: none;
   margin: 0 auto;
   margin-bottom: 1px;
-  min-width: 1200px;
   margin-bottom: 0;
   background: #f47d18;
 }
@@ -456,9 +466,9 @@ This class is added to the container
 
 .menu-desktop .bottom-menu ul.main-menu li {
   float: left;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
   position: relative;
+  -webkit-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
 }
 
 .menu-desktop .bottom-menu ul.main-menu li a {
@@ -508,6 +518,64 @@ This class is added to the container
   background-color: #222;
 }
 
+.menu-desktop .img-logo-1 {
+  right: 0px;
+  top: 0px;
+  width: 270px;
+  height: 152px;
+  position: absolute;
+  z-index: 9999;
+  -webkit-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+.menu-desktop .img-logo-2 {
+  right: 0px;
+  top: -70px;
+  width: 270px;
+  height: 152px;
+  position: absolute;
+  z-index: 9999;
+  -webkit-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+.menu-desktop .move-down {
+  top: 0px;
+}
+
+.menu-desktop .move-up {
+  top: -50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-desktop .img-logo-1 {
+    width: 270px;
+  }
+  .menu-desktop .move-down {
+    top: 60px;
+    right: -190px;
+  }
+  .menu-desktop .move-up {
+    top: -160px;
+    right: -210px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .menu-desktop .img-logo-1 {
+    width: 200px;
+  }
+  .menu-desktop .move-down {
+    top: 60px;
+    right: -190px;
+  }
+  .menu-desktop .move-up {
+    top: -160px;
+    right: -170px;
+  }
+}
+
 #footer {
   margin-top: 15px;
 }
@@ -528,6 +596,10 @@ This class is added to the container
   color: white;
   padding-top: 18px;
   padding-bottom: 18px;
+}
+
+#footer .f-wrap-info .f-img-logo {
+  width: 100%;
 }
 
 #footer .f-bottom {

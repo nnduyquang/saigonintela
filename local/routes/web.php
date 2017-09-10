@@ -21,11 +21,11 @@ Route::get('/category', function () {
 Route::get('/vi-tri', 'PostsController@getFrontendContentVitri');
 Route::get('/can-ho', 'PostsController@getFrontendContentCanHo');
 Route::get('/thiet-ke', 'PostsController@getFrontendContentThietKe');
-Route::get('/lien-he',function(){
-    return view('frontend.lienhe.index');
-});
+Route::get('/tien-ich', 'PostsController@getFrontendContentTienIch');
+Route::get('/lien-he','PostsController@getFrontendContentLienHe');
 Route::get('/tin-tuc', 'NewsController@getAllNews');
 Route::get('/tin-tuc/{path}', 'NewsController@getDetailNews');
+Route::post('/sendmail', ['as' => 'mail.send', 'uses' => 'MailController@send']);
 
 Route::get('/sml_login', function () {
     return view('backend.login.login1');
@@ -61,6 +61,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::delete('sml_admin/news/{id}', ['as' => 'news.destroy', 'uses' => 'NewsController@destroy', 'middleware' => ['permission:news-delete']]);
 
     //CONFIG
+    //--GENERAL--//
+    Route::get('sml_admin/config', ['as' => 'config.index', 'uses' => 'ConfigController@getConfigGeneral']);
+    Route::post('sml_admin/config', ['as' => 'config.store', 'uses' => 'ConfigController@saveConfigGeneral']);
     //--MAIL--//
 //    Route::get('sml_admin/cau-hinh/mail', ['as' => 'config.email.index', 'uses' => 'CauHinhController@getAllCauHinh']);
     Route::get('sml_admin/config/email', ['as' => 'config.email.index', 'uses' => 'ConfigController@getEmailConfig']);
@@ -98,4 +101,8 @@ Route::group(['middleware' => ['auth']], function () {
     //--THIẾT KẾ--//
     Route::get('sml_admin/posts/thiet-ke', ['as' => 'posts.thietke.index', 'uses' => 'PostsController@getPostThietKeContent']);
     Route::post('sml_admin/posts/thiet-ke', ['as' => 'posts.thietke.store', 'uses' => 'PostsController@savePostThietKeContent']);
+
+    //--TIỆN ÍCH--//
+    Route::get('sml_admin/posts/tien-ich', ['as' => 'posts.tienich.index', 'uses' => 'PostsController@getPostTienIchContent']);
+    Route::post('sml_admin/posts/tien-ich', ['as' => 'posts.tienich.store', 'uses' => 'PostsController@savePostTienIchContent']);
 });

@@ -1,9 +1,9 @@
 
-<h1>Tên Của Tôi là {{$name}}</h1><br>
-<h1>Website Của Tôi là {{$website}}</h1><br>
-<h1>Email Của Tôi là {{$email}}</h1><br>
-<h1>Số điện thoại Của Tôi là {{$phone}}</h1><br>
-<h1>Từ khóa Của Tôi là {{$keyword}}</h1><br>
+<h1>Tên Khách Hàng {{$name}}</h1><br>
+<h1>Email Khách Hàng {{$email}}</h1><br>
+<h1>Số Điện thoại Khách Hàng{{$phone}}</h1><br>
+<h1>Địa Chỉ Khách Hàng{{$address}}</h1><br>
+<h1>Yêu Cầu Từ Khách Hàng {{$description}}</h1><br>
 
 
 

@@ -53,6 +53,13 @@
   font-size: 16px;
 }
 
+#p-tin-tuc .p-tintuc-post-bot .p-tintuc-post-bot-w {
+  background: none repeat scroll 0 0 #fff5b4;
+  border: 2px dashed #3366ff;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
   #p-tin-tuc .p-tintuc-post .p-tintuc-post-content {
     line-height: 1.1;

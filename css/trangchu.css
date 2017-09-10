@@ -273,6 +273,43 @@
   margin-top: 10px;
 }
 
+#lien-he .loadingSending {
+  display: none;
+  font-size: 20px;
+}
+
+#lien-he .successSending {
+  display: none;
+  font-size: 20px;
+}
+
+#lien-he [rel="popover"] {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  left: -5px;
+  top: 20%;
+}
+
+#lien-he .errorEmail, #lien-he .errorName, #lien-he .errorPhone {
+  display: none;
+  color: red;
+  -webkit-animation: blinker 1s linear 3;
+          animation: blinker 1s linear 3;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #lien-he .lh-top span.lh-span-dash {
     display: none;
@@ -299,6 +336,7 @@
 
 #tin-tuc .ttda-wrap .ttda-img {
   width: 100%;
+  height: 250px;
 }
 
 #tin-tuc .ttda-wrap span {

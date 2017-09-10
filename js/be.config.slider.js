@@ -2,7 +2,7 @@ if ($('#btnBrowseImageSlider').length) {
     var button1 = document.getElementById('btnBrowseImageSlider');
 
     button1.onclick = function () {
-        selectFileWithCKFinder('path');
+        selectFileWithKCFinder('path');
     }
 }
 ;
@@ -11,26 +11,18 @@ if ($('#path').val() == '')
 else
     $('#showSliderImage').show();
 
-function selectFileWithCKFinder(elementId) {
-    CKFinder.popup({
-        chooseFiles: true,
-        width: 800,
-        height: 600,
-        onInit: function (finder) {
-            finder.on('files:choose', function (evt) {
-                var file = evt.data.files.first();
-                var output = document.getElementById(elementId);
-                output.value = file.getUrl();
-                $('#showSliderImage').show();
-                $('#showSliderImage').fadeIn("fast").attr('src', file.getUrl());
-            });
-
-            finder.on('file:choose:resizedImage', function (evt) {
-                var output = document.getElementById(elementId);
-                output.value = evt.data.resizedUrl;
-                $('#showSliderImage').show();
-                $('#showSliderImage').fadeIn("fast").attr('src', file.getUrl());
-            });
+function selectFileWithKCFinder(elementId) {
+    window.KCFinder = {
+        callBack: function (url) {
+            var output = document.getElementById(elementId);
+            output.value = url;
+            $('#showSliderImage').show();
+            $('#showSliderImage').fadeIn("fast").attr('src', url);
+            window.KCFinder = null;
         }
-    });
+    };
+    window.open(getBaseURL()+'js/kcfinder/browse.php?type=images', 'kcfinder_textbox',
+        'status=0, toolbar=0, location=0, menubar=0, directories=0, ' +
+        'resizable=1, scrollbars=0, width=800, height=600'
+    );
 }

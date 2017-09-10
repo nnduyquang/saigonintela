@@ -252,7 +252,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <li><a href="{{ route('posts.vitri.index') }}">Vị Trí</a></li>
                             <li><a href="{{ route('posts.canho.index') }}">Căn Hộ</a></li>
                             <li><a href="{{ route('posts.thietke.index') }}">Thiết Kế</a></li>
-                            <li><a href="#">Tiện Ích</a></li>
+                            <li><a href="{{ route('posts.tienich.index') }}">Tiện Ích</a></li>
                             <li><a href="#">Thiết Kế</a></li>
                             <li><a href="#">Thanh Toán</a></li>
                         </ul>
@@ -265,7 +265,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="#">Cấu Hình Chung</a></li>
+                            <li><a href="{{ route('config.index') }}">Cấu Hình Chung</a></li>
                             <li><a href="{{ route('config.email.index') }}">Email</a></li>
                             <li><a href="{{ route('config.slider.index') }}">Quản Lý Slider</a></li>
                             <li><a href="{{ route('config.tienich.index') }}">Quản Lý Hình Ảnh Tiện Ích</a></li>

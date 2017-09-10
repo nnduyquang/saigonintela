@@ -3,7 +3,8 @@ var plugins = {
     menu: $('.sidebar'),
     slider1: $('#slider1'),
     lightgallery: $('#lightgallery'),
-    bottomMenu: $('.bottom-menu')
+    bottomMenu: $('.bottom-menu'),
+    btnSendMail:$('#btnSendMail'),
 };
 $(document).ready(function () {
     function sidebar() {
@@ -41,24 +42,129 @@ $(document).ready(function () {
     }
 
     function runScrollOnFix() {
-        var wrap = plugins.bottomMenu
+        var wrap = plugins.bottomMenu;
+        var logo1=$('.img-logo-1');
+        var logo2=$('.img-logo-2');
         if (plugins.slider1.length) {
             $(window).on("scroll", function (e) {
-                if ($(this).scrollTop() > 850) {
+                if ($(this).scrollTop() > 840) {
                     wrap.addClass("navbar-fixed-top");
+                    logo2.css('display','block');
+                    logo1.css('display','none');
+                    setTimeout(function(){logo2.addClass('move-down')},1);
+                    setTimeout(function(){logo1.removeClass('move-up')},1);
                 } else {
                     wrap.removeClass("navbar-fixed-top");
+                    logo2.css('display','none');
+                    logo1.css('display','block');
+                    setTimeout(function(){logo2.removeClass('move-down')},1);
+                    setTimeout(function(){logo1.addClass('move-up')},1);
                 }
             });
         }else{
             $(window).on("scroll", function (e) {
                 if ($(this).scrollTop() > 50) {
                     wrap.addClass("navbar-fixed-top");
+                    logo2.css('display','block');
+                    logo1.css('display','none');
+                    setTimeout(function(){logo2.addClass('move-down')},1);
+                    setTimeout(function(){logo1.removeClass('move-up')},1);
                 } else {
                     wrap.removeClass("navbar-fixed-top");
+                    logo2.css('display','none');
+                    logo1.css('display','block');
+                    setTimeout(function(){logo2.removeClass('move-down')},1);
+                    setTimeout(function(){logo1.addClass('move-up')},1);
                 }
             });
         }
+    }
+    function getBaseURL() {
+        var url = location.href;  // entire url including querystring - also: window.location.href;
+        var baseURL = url.substring(0, url.indexOf('/', 14));
+        if (baseURL.indexOf('http://localhost') != -1) {
+            // Base Url for localhost
+            var url = location.href;  // window.location.href;
+            var pathname = location.pathname;  // window.location.pathname;
+            var index1 = url.indexOf(pathname);
+            var index2 = url.indexOf("/", index1 + 1);
+            var baseLocalUrl = url.substr(0, index2);
+            return baseLocalUrl + "/";
+        }
+        else {
+            // Root Url for domain name
+            return baseURL + "/";
+        }
+
+    }
+    function sendMail() {
+        $('.loadingSending').css('display', 'inline-block');
+        $('.errorEmail').css('display', 'none');
+        $('.errorName').css('display', 'none');
+        $('.errorPhone').css('display', 'none');
+        var data = new FormData($(this).get(0));
+        data.append('name', $("input[name='lh_name']").val());
+        data.append('email', $("input[name='lh_email']").val());
+        data.append('phone', $("input[name='lh_phone']").val());
+        data.append('address', $("input[name='lh_address']").val());
+        data.append('description', $("textarea[name='lh_description']").val());
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $.ajax({
+            type: "POST",
+            url: getBaseURL() + "sendmail",
+            dataType: 'json',
+            processData: false,
+            contentType: false,
+            data: data,
+            success: function (data) {
+                if (data.success) {
+                    $('.loadingSending').css('display', 'none');
+                    $('.successSending').css('display', 'inline-block');
+                    $('.successSending').fadeIn(500);
+                    setTimeout("$('.successSending').fadeOut(1500);", 3000);
+                    $("input[name='lh_name']").val("");
+                    $("input[name='lh_email']").val("");
+                    $("input[name='lh_phone']").val("");
+                    $("input[name='lh_address']").val("");
+                    $("textarea[name='lh_description']").val("");
+                }
+                else {
+                    alert('fail');
+                }
+            },
+            error: function (data) {
+                $('.loadingSending').css('display', 'none');
+                var errors = $.parseJSON(data.responseText);
+                if (errors.hasOwnProperty('email')) {
+                    $('.errorEmail').css('display', 'inline-block');
+                    $('.errorEmail').attr('data-original-title', errors['email']);
+                    $('.errorEmail').tooltip('show');
+                    setTimeout(function () {
+                        $('.errorEmail').tooltip('hide');
+                    }, 4000);
+                }
+                if (errors.hasOwnProperty('name')) {
+                    $('.errorName').css('display', 'inline-block');
+                    $('.errorName').attr('data-original-title', errors['name']);
+                    $('.errorName').tooltip('show');
+                    setTimeout(function () {
+                        $('.errorName').tooltip('hide');
+                    }, 4000);
+                }
+                if (errors.hasOwnProperty('phone')) {
+                    $('.errorPhone').css('display', 'inline-block');
+                    $('.errorPhone').attr('data-original-title', errors['phone']);
+                    $('.errorPhone').tooltip('show');
+                    setTimeout(function () {
+                        $('.errorPhone').tooltip('hide');
+                    }, 4000);
+                }
+            }
+        });
     }
 
     sidebar();
@@ -71,4 +177,11 @@ $(document).ready(function () {
     if (plugins.bottomMenu.length) {
         runScrollOnFix();
     }
+    if (plugins.btnSendMail.length) {
+        $("[rel=popover]").tooltip();
+        plugins.btnSendMail.click(function () {
+            sendMail();
+        });
+    }
+
 });

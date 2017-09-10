@@ -53,9 +53,15 @@ class PostTableSeeder extends Seeder
 //                'order' => 1,
 //                'user_id' => 1
 //            ],
+//            [
+//                'name' => 'thietke-contents',
+//                'description' => 'Bài Viết Thiết Kế Căn Hộ',
+//                'order' => 1,
+//                'user_id' => 1
+//            ],
             [
-                'name' => 'thietke-contents',
-                'description' => 'Bài Viết Thiết Kế Căn Hộ',
+                'name' => 'tienich-contents',
+                'description' => 'Bài Viết Tiện Ích Dự Án',
                 'order' => 1,
                 'user_id' => 1
             ],

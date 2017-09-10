@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Config;
 use App\Http\Requests\NewsRequest;
 use App\News;
 use Illuminate\Http\Request;
@@ -142,12 +143,16 @@ class NewsController extends Controller
         foreach ($news as $data) {
             $data->content = cat_chuoi_dai_thanh_ngan(bo_the_html_trong_chuoi($data->content), 400);
         }
-        return view('frontend.tintuc.index', compact('news'));
+        $diachi=Config::whereIn('name',['cf-address-post'])->first();
+        $phone=Config::whereIn('name',['cf-phone'])->first();
+        return view('frontend.tintuc.index', compact('news','diachi','phone'));
     }
 
     public function getDetailNews($path)
     {
         $news = News::where('path', 'like','%'.$path.'%')->first();
-        return view('frontend.tintuc.detail', compact('news'));
+        $diachi=Config::whereIn('name',['cf-address-post'])->first();
+        $phone=Config::whereIn('name',['cf-phone'])->first();
+        return view('frontend.tintuc.detail', compact('news','diachi','phone'));
     }
 }

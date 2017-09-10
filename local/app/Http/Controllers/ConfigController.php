@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Config;
 use App\Http\Requests\ConfigEmailRequest;
+use Illuminate\Http\Request;
 
 class ConfigController extends Controller
 {
@@ -75,5 +76,27 @@ class ConfigController extends Controller
         }
         return redirect()->route('config.email.index')
             ->with('success', 'Cấu Hình Email Lưu Thành Công');
+    }
+    public function getConfigGeneral(){
+        $cauhinhs = Config::whereIn('name', ['cf-address-post','cf-phone'])->orderBy('order')->get();
+        return view('backend.admin.config.config', compact('cauhinhs'));
+    }
+    public function saveConfigGeneral(Request $request){
+        $cfAddressPost = $request->input('cf-address-post');
+        $hdCfAddressPost = $request->input('hd-cf-address-post');
+        $cfPhone = $request->input('cf-phone');
+        $hdCfPhone = $request->input('hd-cf-phone');
+        if (strcmp(trim($cfAddressPost), trim($hdCfAddressPost)) != 0) {
+            $config = Config::where('name', 'cf-address-post')->first();
+            $config->content = $cfAddressPost;
+            $config->save();
+        }
+        if (strcmp(trim($cfPhone), trim($hdCfPhone)) != 0) {
+            $config = Config::where('name', 'cf-phone')->first();
+            $config->content = $cfPhone;
+            $config->save();
+        }
+        return redirect()->route('config.index')
+            ->with('success', 'Cấu Hình Lưu Thành Công');
     }
 }

@@ -30,7 +30,7 @@ class MailRequest extends FormRequest
                 return [
                     'name' => 'required',
                     'email'=>'required|email',
-                    'keyword'=>'required'
+                    'phone'=>'required'
                 ];
             }
             case 'PUT':
@@ -43,7 +43,7 @@ class MailRequest extends FormRequest
             'name.required' => 'Mời Quý Khách Nhập Tên Liên Hệ',
             'email.required' => 'Mời Quý Khách Nhập Email',
             'email.email' => 'Mời Quý Khách Nhập Nhập Đúng Định Dạng Email',
-            'keyword.required' => 'Xin Vui Lòng Nhập Thông Tin Báo Giá',
+            'phone.required' => 'Xin Vui Lòng Nhập Số Điện Thoại',
         ];
     }
 }

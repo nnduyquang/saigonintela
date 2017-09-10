@@ -3,6 +3,7 @@
     {{ Html::style('css/be.config.slider.css') }}
 @stop
 @section('scripts')
+
     {{ Html::script('js/be.config.slider.js',array('async' => 'async') ) }}
 @stop
 @section('container')

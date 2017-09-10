@@ -1,26 +1,26 @@
-<div id="posts-vitri-content" class="col-md-12">
+<div id="posts-content" class="col-md-12">
     <div class="row">
         <div class="col-md-12">
             <div class="row">
-                {{ Html::image('images/temps/duanthegoldview-quan4-833598db4e.jpg','',array('class'=>'posts-vitri-content-img')) }}
+                {{ Html::image('images/temps/duanthegoldview-quan4-833598db4e.jpg','',array('class'=>'posts-content-img')) }}
             </div>
         </div>
         <div class="col-md-12">
             <div class="row">
-                <div class="p-vt-w-title">
-                    <h1 class="p-vt-title">Vị Trí Dự Án SaiGon Intela</h1>
+                <div class="p-w-title">
+                    <h1 class="p-title">Vị Trí Dự Án SaiGon Intela</h1>
                 </div>
             </div>
         </div>
         <div class="col-md-12">
-            {!! $posts->content !!}
-        </div>
-        <div class="col-md-12 p-d-vitri-bot">
             <div class="container">
-                <div class="p-d-vitri-bot-w">
-                    <p style="text-align: center;">Mọi chi tiết về <strong>dự án TNR THE GOLDVIEW</strong> vui lòng liên
-                        hệ<strong>: <span style="color: #ff0000;">0933 390 860 <br>(PKD Chủ Đầu Tư Căn Hộ -TNR THE GOLDVIEW)</span></strong>
-                    </p>
+                {!! $posts->content !!}
+            </div>
+        </div>
+        <div class="col-md-12 p-d-bot">
+            <div class="container">
+                <div class="p-d-bot-w">
+                    {!! $diachi->content !!}
                 </div>
             </div>
         </div>
