@@ -18,7 +18,7 @@
                     <div class="tt-description tt-d-left">
                         <h3>Số Lượng Căn Hộ</h3>
                         <div class="tt-description-detail">
-                            <p>Gồm 1501 Căn Hộ Với Công Viên Cây Xanh Nội Khu 2.200m Và Hồ Bơi 400m2, 35 Shop Thương Mại Duplex</p>
+                            <p>Gồm 1068 Căn Hộ Với Công Viên Cây Xanh Nội Khu 2.200m Và Hồ Bơi 400m2, 35 Shop Thương Mại Duplex</p>
                         </div>
                     </div>
                 </li>

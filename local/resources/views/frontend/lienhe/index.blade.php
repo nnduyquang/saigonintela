@@ -7,7 +7,5 @@
 @section('slider')
 @stop
 @section('container')
-    <div class="container">
         @include('frontend.lienhe.lienhe')
-    </div>
 @stop

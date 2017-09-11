@@ -1,5 +1,5 @@
 <div class="container hidden-lg hidden-md">
-    <div style="background-color: #1ba8ff" class="mobile header fixed-header navbar-fixed-top " role="navigation">
+    <div style="background-color: #f47d18" class="mobile header fixed-header navbar-fixed-top " role="navigation">
         <ul class="nav nav-pills pull-left">
             <li><a href="#" id="trigger"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
             <li style="padding: 10px 15px;color: white;font-weight: bolder"> @yield('title')</li>

@@ -9,6 +9,9 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link rel="icon"
+          type="image/png"
+          href="{{ asset('favicon.ico') }}" />
     {{ Html::style('css/core.common.css') }}
     {{ Html::style('css/core.frontend.css') }}
     {{ Html::style('css/frontend.css') }}
@@ -46,7 +49,7 @@
     <div class="phone_animation">
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
-        <a href="tel:02866830091" class="phone_animation_circle_fill_img"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="tel:0909633252" class="phone_animation_circle_fill_img"><i class="fa fa-phone" aria-hidden="true"></i></a>
     </div>
 </div>
 </body>

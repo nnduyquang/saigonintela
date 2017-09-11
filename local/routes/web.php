@@ -15,9 +15,7 @@
 //    return view('frontend.trangchu.index');
 //});
 Route::get('/','PostsController@getFrontendContentTrangChu');
-Route::get('/category', function () {
-    return view('frontend.menu.m-category');
-});
+Route::get('/category', 'PostsController@getFrontendContentCategory');
 Route::get('/vi-tri', 'PostsController@getFrontendContentVitri');
 Route::get('/can-ho', 'PostsController@getFrontendContentCanHo');
 Route::get('/thiet-ke', 'PostsController@getFrontendContentThietKe');

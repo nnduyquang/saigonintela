@@ -141,4 +141,9 @@ class PostsController extends Controller
         $phone=Config::whereIn('name',['cf-phone'])->first();
         return view('frontend.lienhe.index', compact('phone'));
     }
+    //Liên Hệ//
+    public function getFrontendContentCategory(){
+        $phone=Config::whereIn('name',['cf-phone'])->first();
+        return view('frontend.menu.m-category', compact('phone'));
+    }
 }

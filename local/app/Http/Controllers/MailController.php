@@ -12,6 +12,7 @@ use App\Mail\SendingMailToMe;
 class MailController extends Controller
 {
     public function send(MailRequest $request){
+        echo'1';
         Mail::send(new SendingMailToMe());
         Mail::send(new SendingMailToCustomer());
         if( count(Mail::failures()) > 0 ) {

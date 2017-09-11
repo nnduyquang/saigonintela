@@ -21,8 +21,8 @@
   background: white;
   -webkit-transition: left 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
   transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
-  -webkit-box-shadow: 0.5em 0 0 0 #1ba8ff, 0.6em 0 0 0 #1ba8ff;
-  box-shadow: 0.5em 0 0 0 #1ba8ff, 0.6em 0 0 0 #1ba8ff;
+  -webkit-box-shadow: 0.5em 0 0 0 #f47d18, 0.6em 0 0 0 #f47d18;
+  box-shadow: 0.5em 0 0 0 #f47d18, 0.6em 0 0 0 #f47d18;
 }
 .sidebar #close {
   //float: right;
@@ -34,8 +34,8 @@
 
 .sidebar.closed {
   left: -260px;
-  -webkit-box-shadow: 0 0 0 #1ba8ff;
-  box-shadow: 0 0 0 #1ba8ff;
+  -webkit-box-shadow: 0 0 0 #f47d18;
+  box-shadow: 0 0 0 #f47d18;
 }
 .sidebar h2 {
   padding: .5em;
@@ -84,7 +84,7 @@
   color: #757575;
 }
 .sidebar .sidebar-hotline .sidebar-number{
-  color: #1ba8ff;
+  color: #f47d18;
 }
 .sidebar .icon-sidebar{
   width: 56px;
@@ -99,12 +99,12 @@
 
 }
 .sidebar .background-sidebar{
-  background-image: url(../images/temps/310615.jpg);
+  background-image: url(../images/logo/logo-300x197.png);
   height: calc(56px*3);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  background-color: #1ba8ff;
+  background-color: white;
 }
 .footer a {
   color: #17a689;

@@ -125,7 +125,7 @@
   top: 20%;
 }
 
-.container-contact .contain-swap .wp-contact .errorEmail, .container-contact .contain-swap .wp-contact .errorName, .container-contact .contain-swap .wp-contact .errorInfo {
+.container-contact .contain-swap .wp-contact .errorEmail, .container-contact .contain-swap .wp-contact .errorName, .container-contact .contain-swap .wp-contact .errorPhone {
   display: none;
   color: red;
   -webkit-animation: blinker 1s linear 3;
