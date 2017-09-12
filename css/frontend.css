@@ -397,6 +397,62 @@ This class is added to the container
   height: 100% !important;
 }
 
+.slider-on-mobile {
+  position: relative;
+}
+
+.slider-on-mobile .slider-mobile {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.slider-on-mobile .slider-mobile-text {
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 90.5%;
+  z-index: 99999;
+  min-height: 100vh;
+  color: white;
+  width: 100%;
+}
+
+.slider-on-mobile .slider-mobile-text .slider-header {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.slider-on-mobile .slider-mobile-text .slider-description {
+  font-size: 25px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1.6;
+}
+
+.slider-on-mobile .slider-mobile-text .btn-lienhe {
+  background-color: #960d13;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  width: 50%;
+  height: 50px;
+  -webkit-transition: background-color .2s linear 0s;
+  transition: background-color .2s linear 0s;
+}
+
+.slider-on-mobile::after {
+  position: absolute;
+  content: '';
+  display: block;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+}
+
 @media screen and (max-width: 415px) {
   .nivoSlider {
     position: relative;
@@ -416,6 +472,12 @@ This class is added to the container
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    min-height: 100vh;
   }
 }
 

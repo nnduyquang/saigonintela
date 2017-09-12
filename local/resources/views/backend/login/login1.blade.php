@@ -9,7 +9,7 @@ header('Content-Type: text/html');?>
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <head>
     <meta charset="UTF-8">
-    <title>Login form shake effect</title>
+    <title>SaiGon Intela Admin</title>
 
 
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
@@ -20,7 +20,7 @@ header('Content-Type: text/html');?>
 
 <body id="login">
 <div class="login-form">
-    <h1>Vini</h1>
+    <h1>SaiGon Intela</h1>
     <div class="form-group ">
         <input type="text" class="form-control" placeholder="Email " id="email">
         <i class="fa fa-user"></i>
@@ -30,7 +30,7 @@ header('Content-Type: text/html');?>
         <i class="fa fa-lock"></i>
     </div>
     <span class="alert">Invalid Credentials</span>
-    <a class="link" href="#">Lost your password?</a>
+    {{--<a class="link" href="#">Lost your password?</a>--}}
     <button type="button" class="log-btn" >Đăng Nhập</button>
 
 
