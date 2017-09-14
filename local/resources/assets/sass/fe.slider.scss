@@ -33,22 +33,36 @@
     position: absolute;
     display: block;
     text-align: center;
-    top: 90.5%;
+    top: 63.5%;
     z-index: 99999;
-    min-height: 100vh;
-    color: white;
+    color: #9b1e22;
     width: 100%;
+    font-weight: 900;
     .slider-header{
-      font-size: 40px;
+      font-size: 20px;
       text-transform: uppercase;
+      float:left;
+      padding-left:5%;
+      a{
+        color: #9b1e22;
+      }
     }
     .slider-description{
-      font-size: 25px;
-      margin-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-      line-height: 1.6;
+      font-size: 20px;
+      float: right;
+      padding-right:7%;
+      a{
+        color: #9b1e22;
+      }
     }
+  }
+  .slider-lienhe{
+    position: absolute;
+    top:90.5%;
+    z-index: 99999;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
     .btn-lienhe{
       background-color: #960d13;
       color: #fff;
@@ -70,6 +84,13 @@
   min-height: 100vh;
   width: 100%;
   top: 0;
+}
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
 }
 
 @media screen and(max-width: 415px) {

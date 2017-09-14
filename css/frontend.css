@@ -412,27 +412,44 @@ This class is added to the container
   position: absolute;
   display: block;
   text-align: center;
-  top: 90.5%;
+  top: 63.5%;
   z-index: 99999;
-  min-height: 100vh;
-  color: white;
+  color: #9b1e22;
   width: 100%;
+  font-weight: 900;
 }
 
 .slider-on-mobile .slider-mobile-text .slider-header {
-  font-size: 40px;
+  font-size: 20px;
   text-transform: uppercase;
+  float: left;
+  padding-left: 5%;
+}
+
+.slider-on-mobile .slider-mobile-text .slider-header a {
+  color: #9b1e22;
 }
 
 .slider-on-mobile .slider-mobile-text .slider-description {
-  font-size: 25px;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  line-height: 1.6;
+  font-size: 20px;
+  float: right;
+  padding-right: 7%;
 }
 
-.slider-on-mobile .slider-mobile-text .btn-lienhe {
+.slider-on-mobile .slider-mobile-text .slider-description a {
+  color: #9b1e22;
+}
+
+.slider-on-mobile .slider-lienhe {
+  position: absolute;
+  top: 90.5%;
+  z-index: 99999;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.slider-on-mobile .slider-lienhe .btn-lienhe {
   background-color: #960d13;
   color: #fff;
   text-transform: uppercase;
@@ -451,6 +468,23 @@ This class is added to the container
   min-height: 100vh;
   width: 100%;
   top: 0;
+}
+
+.blink_me {
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 415px) {

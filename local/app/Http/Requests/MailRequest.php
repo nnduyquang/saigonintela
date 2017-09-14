@@ -29,7 +29,7 @@ class MailRequest extends FormRequest
             case 'POST': {
                 return [
                     'name' => 'required',
-                    'email'=>'required|email',
+//                    'email'=>'required|email',
                     'phone'=>'required'
                 ];
             }
@@ -41,8 +41,8 @@ class MailRequest extends FormRequest
     {
         return [
             'name.required' => 'Mời Quý Khách Nhập Tên Liên Hệ',
-            'email.required' => 'Mời Quý Khách Nhập Email',
-            'email.email' => 'Mời Quý Khách Nhập Nhập Đúng Định Dạng Email',
+//            'email.required' => 'Mời Quý Khách Nhập Email',
+//            'email.email' => 'Mời Quý Khách Nhập Nhập Đúng Định Dạng Email',
             'phone.required' => 'Xin Vui Lòng Nhập Số Điện Thoại',
         ];
     }

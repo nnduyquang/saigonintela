@@ -34,7 +34,7 @@
         </div>
         <div class="col-md-6">
             <div class="form-group">
-                <label for="email">Email<span class="lh-red">*</span>:</label>
+                <label for="email">Email:</label>
                 {!! Form::text('lh_email', null, array('placeholder' => '','class' => 'form-control')) !!}
                 <i class="fa fa-exclamation-circle errorEmail" rel="popover" data-toggle="tooltip" data-placement="top"
                    title="Tên Không Được Để Trống"></i>

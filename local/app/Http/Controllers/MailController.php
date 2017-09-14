@@ -11,11 +11,14 @@ use App\Mail\SendingMailToMe;
 
 class MailController extends Controller
 {
-    public function send(MailRequest $request){
-        echo'1';
+    public function send(MailRequest $request)
+    {
+
         Mail::send(new SendingMailToMe());
-        Mail::send(new SendingMailToCustomer());
-        if( count(Mail::failures()) > 0 ) {
+        if ($request->input('email')) {
+            Mail::send(new SendingMailToCustomer());
+        }
+        if (count(Mail::failures()) > 0) {
 
             echo "Thua <br />";
 
@@ -24,7 +27,9 @@ class MailController extends Controller
 //            }
 
         } else {
-            Mail::send(new SendingMailToCustomer());
+            if ($request->input('email')) {
+                Mail::send(new SendingMailToCustomer());
+            }
             return response()->json([
                 'success' => true
             ]);

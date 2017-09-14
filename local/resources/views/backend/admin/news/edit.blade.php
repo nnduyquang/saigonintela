@@ -40,7 +40,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Nội Dung:</strong>
-                {!! Form::textarea('content-news',$news->content, array('placeholder' => 'Nội Dung','id'=>'content-news','class' => 'form-control','rows'=>'20','style'=>'resize:none')) !!}
+                {!! Form::textarea('content-news',$news->content, array('placeholder' => 'Nội Dung','id'=>'content-news-edit','class' => 'form-control','rows'=>'20','style'=>'resize:none')) !!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

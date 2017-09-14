@@ -45,7 +45,7 @@
                     <div class="tt-description tt-d-right">
                         <h3>Tiến Độ Dự Án</h3>
                         <div class="tt-description-detail">
-                            <p>Dự Án Khởi Công Tháng 7 Vừa Qua Và Dự Kiến Bàn Giao Quý 4/2019</p>
+                            <p>Dự Án Khởi Công Tháng 7 Vừa Qua Và Dự Kiến Bàn Giao Quý II/2019</p>
                         </div>
                     </div>
                 </li>
@@ -54,7 +54,7 @@
                     <div class="tt-description tt-d-right">
                         <h3>Chủ Đầu Tư Là Ai</h3>
                         <div class="tt-description-detail">
-                            <p>Công Ty Cổ Phần Đầu Tư LDG (LDG Group), Thành Viên Tập Đàon Đất Xanh</p>
+                            <p>Công Ty Cổ Phần Đầu Tư LDG (LDG Group), Thành Viên Tập Đoàn Đất Xanh</p>
                         </div>
                     </div>
                 </li>
