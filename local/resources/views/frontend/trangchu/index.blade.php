@@ -8,7 +8,7 @@
 {{ Html::script('js/lightgallery.js') }}
 @stop
 @section('slider')
-    @include('frontend.slider.index')
+    @include('frontend.slider.slider2')
 @stop
 @section('container')
     @include('frontend.trangchu.khuyenmai')

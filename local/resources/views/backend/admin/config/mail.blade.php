@@ -42,7 +42,7 @@
                     <div class="form-group">
                         <strong>Tiêu Đề Email Khách Hàng Nhận Phản Hồi:</strong>
                         {!! Form::text('email-sender-subject', $cauhinh->content, array('placeholder' => '','class' => 'form-control')) !!}
-                        {{ Form::hidden('hd-email-sender-subject', $cauhinh->content) }}
+                        {{ $category->name}}
                     </div>
                 </div>
             @endif

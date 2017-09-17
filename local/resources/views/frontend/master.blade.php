@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="icon"
           type="image/png"
-          href="{{ asset('favicon.ico') }}" />
+          href="{{ asset('favicon.ico') }}"/>
     {{ Html::style('css/core.common.css') }}
     {{ Html::style('css/core.frontend.css') }}
     {{ Html::style('css/frontend.css') }}
@@ -23,11 +23,13 @@
 </header>
 <div id="blurrMe">
     @include('frontend.menu.m-menu')
-    @yield('slider')
+    <div class="container">
+        @yield('slider')
+    </div>
     @include('frontend.menu.menu')
 
     {{--<div id="wrap-container">--}}
-        @yield('container')
+    @yield('container')
     {{--</div>--}}
 </div>
 @include('frontend.menu.m-sidebar')

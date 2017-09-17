@@ -85,6 +85,39 @@
   width: 100%;
   top: 0;
 }
+#slider2{
+  position: relative;
+  img.slideshow{
+    width: 100%;
+  }
+  .slider-text-thongminh{
+    position: absolute;
+    z-index: 1;
+    top: 68%;
+    left: 49%;
+    color:white;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 900;
+    line-height: 1;
+    a{
+      color:white;
+    }
+  }
+  .slider-text-khacbiet{
+    position: absolute;
+    z-index: 1;
+    top: 42%;
+    left: 76%;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 900;
+    line-height: 1;
+    a{
+      color:white;
+    }
+  }
+}
 .blink_me {
   animation: blinker 1s linear infinite;
 }

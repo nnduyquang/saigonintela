@@ -470,6 +470,45 @@ This class is added to the container
   top: 0;
 }
 
+#slider2 {
+  position: relative;
+}
+
+#slider2 img.slideshow {
+  width: 100%;
+}
+
+#slider2 .slider-text-thongminh {
+  position: absolute;
+  z-index: 1;
+  top: 68%;
+  left: 49%;
+  color: white;
+  text-align: center;
+  font-size: 33px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+#slider2 .slider-text-thongminh a {
+  color: white;
+}
+
+#slider2 .slider-text-khacbiet {
+  position: absolute;
+  z-index: 1;
+  top: 42%;
+  left: 76%;
+  text-align: center;
+  font-size: 33px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+#slider2 .slider-text-khacbiet a {
+  color: white;
+}
+
 .blink_me {
   -webkit-animation: blinker 1s linear infinite;
           animation: blinker 1s linear infinite;
