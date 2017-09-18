@@ -1,12 +1,14 @@
 <div class="col-md-12 menu-desktop hidden-sm hidden-xs">
     <div class="row">
         <div class="col-md-12 header-menu">
-            <div class="container">
-                <ul class="sub-menu">
-                    <li><a href="">Thanh Toán</a></li>
-                    <li><a href="">Tiến Độ</a></li>
-                    <li><a class="sm-icon-phone" href="">{{$phone->content}}</a></li>
-                </ul>
+            <div class="row">
+                <div class="container">
+                    <ul class="sub-menu">
+                        <li><a href="">Thanh Toán</a></li>
+                        <li><a href="">Tiến Độ</a></li>
+                        <li><a class="sm-icon-phone" href="">{{$phone->content}}</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="col-md-12 bottom-menu">

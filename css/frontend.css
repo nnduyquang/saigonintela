@@ -481,11 +481,11 @@ This class is added to the container
 #slider2 .slider-text-thongminh {
   position: absolute;
   z-index: 1;
-  top: 68%;
-  left: 49%;
+  top: 70%;
+  left: 47%;
   color: white;
   text-align: center;
-  font-size: 33px;
+  font-size: 30px;
   font-weight: 900;
   line-height: 1;
 }
@@ -497,8 +497,8 @@ This class is added to the container
 #slider2 .slider-text-khacbiet {
   position: absolute;
   z-index: 1;
-  top: 42%;
-  left: 76%;
+  top: 40%;
+  left: 73%;
   text-align: center;
   font-size: 33px;
   font-weight: 900;

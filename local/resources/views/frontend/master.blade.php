@@ -23,9 +23,9 @@
 </header>
 <div id="blurrMe">
     @include('frontend.menu.m-menu')
-    <div class="container">
-        @yield('slider')
-    </div>
+
+    @yield('slider')
+
     @include('frontend.menu.menu')
 
     {{--<div id="wrap-container">--}}

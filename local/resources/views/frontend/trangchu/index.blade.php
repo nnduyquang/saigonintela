@@ -5,10 +5,19 @@
     {{ Html::style('css/lightgallery.css') }}
 @stop
 @section('scripts')
-{{ Html::script('js/lightgallery.js') }}
+    {{ Html::script('js/lightgallery.js') }}
 @stop
 @section('slider')
-    @include('frontend.slider.slider2')
+    <div class="col-md-12 hidden-lg hidden-md">
+        <div class="row">
+            @include('frontend.slider.index')
+        </div>
+    </div>
+    <div class="col-md-12 hidden-sm hidden-xs">
+        <div class="row">
+            @include('frontend.slider.slider2')
+        </div>
+    </div>
 @stop
 @section('container')
     @include('frontend.trangchu.khuyenmai')
