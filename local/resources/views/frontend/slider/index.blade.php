@@ -16,7 +16,6 @@
                 <p class="slider-header blink_me"><a href="#">ThÔNG MINH</a></p>
                 {{--<p class="slider-description blink_me"><a href="http://www.saigonintelahcm.com/tin-tuc/8-dieu-khac-biet-duy-nhat-chi-co-tai-saigon-intela">KHÁC BIỆT</a></p>--}}
                 <p class="slider-description blink_me"><a href="#">KHÁC BIỆT</a></p>
-
             </div>
             <div class="slider-lienhe">
                 <a href="{{URL::to('lien-he')}}">

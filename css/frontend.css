@@ -509,6 +509,51 @@ This class is added to the container
   color: white;
 }
 
+#slider2 .slider-text-pttt {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 45%;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+#slider2 .slider-text-pttt a {
+  color: white;
+}
+
+#slider2 .slider-text-vt {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 59%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+#slider2 .slider-text-vt a {
+  color: white;
+}
+
+#slider2 .slider-text-ti {
+  position: absolute;
+  z-index: 1;
+  top: 55%;
+  left: 62%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+#slider2 .slider-text-ti a {
+  color: white;
+}
+
 .blink_me {
   -webkit-animation: blinker 1s linear infinite;
           animation: blinker 1s linear infinite;
@@ -545,6 +590,81 @@ This class is added to the container
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  #slider2 {
+    position: relative;
+  }
+  #slider2 img.slideshow {
+    width: 100%;
+  }
+  #slider2 .slider-text-thongminh {
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 47%;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  #slider2 .slider-text-thongminh a {
+    color: white;
+  }
+  #slider2 .slider-text-khacbiet {
+    position: absolute;
+    z-index: 1;
+    top: 42%;
+    left: 72%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  #slider2 .slider-text-khacbiet a {
+    color: white;
+  }
+  #slider2 .slider-text-pttt {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 45%;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  #slider2 .slider-text-pttt a {
+    color: white;
+  }
+  #slider2 .slider-text-vt {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 59%;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  #slider2 .slider-text-vt a {
+    color: white;
+  }
+  #slider2 .slider-text-ti {
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+    left: 62%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  #slider2 .slider-text-ti a {
+    color: white;
   }
 }
 
