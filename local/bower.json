@@ -21,6 +21,7 @@
     "lightgallery": "^1.6.0",
     "AdminLTE": "admin-lte#^2.3.11",
     "ckeditor": "#full/latest",
-    "bootstrap-toggle": "^2.2.2"
+    "bootstrap-toggle": "^2.2.2",
+    "fancybox": "^3.1.25"
   }
 }

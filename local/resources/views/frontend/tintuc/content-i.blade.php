@@ -4,7 +4,7 @@
             <h1>Tin Tức</h1>
         </div>
         <div class="p-tintuc-intro">
-            <p>TNR THE GOLDVIEW được hoàn thiện và đảm bảo chất lượng cao nhất với hệ thống an ninh bảo mật, các thiết
+            <p>SAIGON INTELA được hoàn thiện và đảm bảo chất lượng cao nhất với hệ thống an ninh bảo mật, các thiết
                 bị bảo vệ hiện đại, và bạn cũng sẽ vô cùng hài lòng với hệ thống khu vui chơi, giải trí như: hồ bơi,
                 trung tâm thương mại, phòng sinh hoạt cộng đồng, phòng tập Gym – yoga, vườn treo xanh …</p>
         </div>

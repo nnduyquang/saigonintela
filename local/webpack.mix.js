@@ -21,9 +21,11 @@ mix.styles([
     ], '../css/core.common.css')
     .styles([
         'bower_components/nivo-slider/jquery.nivo.slider.pack.js',
+        'bower_components/fancybox/dist/jquery.fancybox.min.js',
     ], '../js/core.frontend.js')
     .styles([
         'bower_components/nivo-slider/nivo-slider.css',
+        'bower_components/fancybox/dist/jquery.fancybox.min.css',
     ], '../css/core.frontend.css')
     .sass('resources/assets/sass/frontend.scss', '../../css/frontend.css').options({processCssUrls: false})
     .sass('resources/assets/sass/trangchu.scss', '../../css/trangchu.css').options({processCssUrls: false})

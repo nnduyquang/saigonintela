@@ -20,6 +20,9 @@
     </div>
 @stop
 @section('container')
+    <a class="img-fancy" data-fancybox="gallery" href="{{url('images/sliders/SMART-CITY-2.jpg')}}">
+        {{ Html::image('images/sliders/SMART-CITY-2.jpg','',array('class'=>'show-once')) }}
+    </a>
     @include('frontend.trangchu.khuyenmai')
     @include('frontend.trangchu.thongtin')
     @include('frontend.trangchu.gioithieu')

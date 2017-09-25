@@ -166,6 +166,16 @@ $(document).ready(function () {
             }
         });
     }
+    function runFancyBox(){
+        $('a.img-fancy').fancybox({
+            'transitionIn'	:	'elastic',
+            'transitionOut'	:	'elastic',
+            'speedIn'		:	600,
+            'speedOut'		:	200,
+            'overlayShow'	:	false
+        }).trigger('click');
+    }
+    runFancyBox();
 
     sidebar();
     if (plugins.slider1.length) {

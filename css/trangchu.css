@@ -363,3 +363,7 @@
   color: #f47d18;
   text-transform: uppercase;
 }
+
+.img-fancy {
+  display: none;
+}
