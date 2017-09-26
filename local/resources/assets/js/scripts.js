@@ -175,7 +175,10 @@ $(document).ready(function () {
             'overlayShow'	:	false
         }).trigger('click');
     }
-    runFancyBox();
+    if(window.screen.width>=750){
+        runFancyBox();
+    }
+
 
     sidebar();
     if (plugins.slider1.length) {
