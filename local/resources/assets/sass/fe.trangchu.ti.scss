@@ -9,7 +9,7 @@
       width: 50%;
       .line {
         height: 1px;
-        border-top: 3px solid #f47d18;
+        border-top: 3px solid $main-title-color;
         border-bottom: 3px solid #ebebeb;
         display: block;
         position: relative;
@@ -20,7 +20,7 @@
     h4{
       white-space: pre;
       padding: 0 0.8em;
-      color: #f47d18;
+      color: $main-title-color;
       text-transform: uppercase;
     }
   }
@@ -37,7 +37,7 @@
         display: block;
         text-align: center;
         color: white;
-        background-color: #f47d18;
+        background-color: $main-title-color;
         margin: -6px 5px 10px;
       }
     }

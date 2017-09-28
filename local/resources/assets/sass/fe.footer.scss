@@ -3,7 +3,7 @@
   .f-hotline {
     padding-top: 18px;
     padding-bottom: 18px;
-    background-color: #f47d18;
+    background-color: $main-bg-color;
     color: white;
     span {
       font-size: 20px;
@@ -15,7 +15,7 @@
     padding-top: 18px;
     padding-bottom: 18px;
     .f-img-logo{
-      width: 100%;
+      width: 50%;
     }
   }
   .f-bottom {

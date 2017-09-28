@@ -243,6 +243,12 @@ This class is added to the container
   }
 }
 
+.phone_hotline {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 .callback {
   position: fixed;
   left: -30px;
@@ -712,7 +718,8 @@ This class is added to the container
   margin: 0 auto;
   margin-bottom: 1px;
   margin-bottom: 0;
-  background: #f47d18;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4e184), to(#c9ab56));
+  background: linear-gradient(#f4e184, #c9ab56);
 }
 
 .menu-desktop .bottom-menu ul.main-menu {
@@ -838,7 +845,7 @@ This class is added to the container
 #footer .f-hotline {
   padding-top: 18px;
   padding-bottom: 18px;
-  background-color: #f47d18;
+  background-color: linear-gradient(#f4e184, #c9ab56);
   color: white;
 }
 
@@ -854,7 +861,7 @@ This class is added to the container
 }
 
 #footer .f-wrap-info .f-img-logo {
-  width: 100%;
+  width: 50%;
 }
 
 #footer .f-bottom {

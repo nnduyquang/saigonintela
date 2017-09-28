@@ -14,7 +14,7 @@
         <div class="col-md-12 bottom-menu">
             <div class="container">
                 <ul class="main-menu">
-                    <li>{{ Html::image('images/logo/logo-300x197.png','',array('class'=>'img-logo-1')) }}</li>
+                    <li>{{ Html::image('images/logo/logo-300x197.png','',array('class'=>'img-logo-1','style'=>'display:none')) }}</li>
                     <li>{{ Html::image('images/logo/logo.png','',array('class'=>'img-logo-2','style'=>'display:none')) }}</li>
                     <li><a href="{{URL::to('/')}}">Trang Chủ</a></li>
                     {{--<li><a href="">Bảng Giá</a></li>--}}

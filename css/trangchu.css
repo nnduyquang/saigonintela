@@ -12,7 +12,7 @@
 
 #khuyen-mai .km-top span.km-span-dash .line {
   height: 1px;
-  border-top: 3px solid #f47d18;
+  border-top: 3px solid #daa43b;
   border-bottom: 3px solid #ebebeb;
   display: block;
   position: relative;
@@ -23,7 +23,7 @@
 #khuyen-mai .km-top h4 {
   white-space: pre;
   padding: 0 0.8em;
-  color: #f47d18;
+  color: #daa43b;
   text-transform: uppercase;
 }
 
@@ -57,9 +57,10 @@
   font-size: 32px;
   border-width: 0px;
   border-style: none;
-  background: #f47d18;
-  color: #ffffff;
-  border-color: #f47d18;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4e184), to(#c9ab56));
+  background: linear-gradient(#f4e184, #c9ab56);
+  color: #fe0202;
+  border-color: linear-gradient(#f4e184, #c9ab56);
   width: 3em;
   text-align: center;
   height: 1.5em;
@@ -74,7 +75,7 @@
   border-left: 1.5em solid transparent;
   border-right: 1.5em solid transparent;
   border-bottom: 1em solid;
-  border-bottom-color: inherit !important;
+  border-bottom-color: #f4e184;
 }
 
 #thong-tin ul li .tt-icon:after {
@@ -85,7 +86,7 @@
   border-left: 1.5em solid transparent;
   border-right: 1.5em solid transparent;
   border-top: 1em solid;
-  border-top-color: inherit !important;
+  border-top-color: #c9ab56;
 }
 
 #thong-tin ul li .tt-d-left {
@@ -118,13 +119,18 @@
 }
 
 #gioi-thieu {
-  background-color: #f47d18;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4e184), to(#c9ab56));
+  background: linear-gradient(#f4e184, #c9ab56);
   padding: 15px 0px 15px 0;
 }
 
 #gioi-thieu .gt-img {
   border-radius: 50%;
   width: 100%;
+}
+
+#gioi-thieu h2 {
+  color: #fe0202;
 }
 
 #ban-do {
@@ -137,7 +143,8 @@
 
 #vi-tri {
   padding: 50px 0px 50px 0;
-  background-color: #f47d18;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4e184), to(#c9ab56));
+  background: linear-gradient(#f4e184, #c9ab56);
 }
 
 #vi-tri ul li {
@@ -171,7 +178,7 @@
 
 #tien-ich .ti-top span.ti-span-dash .line {
   height: 1px;
-  border-top: 3px solid #f47d18;
+  border-top: 3px solid #daa43b;
   border-bottom: 3px solid #ebebeb;
   display: block;
   position: relative;
@@ -182,7 +189,7 @@
 #tien-ich .ti-top h4 {
   white-space: pre;
   padding: 0 0.8em;
-  color: #f47d18;
+  color: #daa43b;
   text-transform: uppercase;
 }
 
@@ -204,7 +211,7 @@
   display: block;
   text-align: center;
   color: white;
-  background-color: #f47d18;
+  background-color: #daa43b;
   margin: -6px 5px 10px;
 }
 
@@ -240,7 +247,7 @@
 
 #lien-he .lh-top span.lh-span-dash .line {
   height: 1px;
-  border-top: 3px solid #f47d18;
+  border-top: 3px solid #daa43b;
   border-bottom: 3px solid #ebebeb;
   display: block;
   position: relative;
@@ -251,7 +258,7 @@
 #lien-he .lh-top h4 {
   white-space: pre;
   padding: 0 0.8em;
-  color: #f47d18;
+  color: #daa43b;
   text-transform: uppercase;
 }
 
@@ -273,7 +280,7 @@
 }
 
 #lien-he input, #lien-he textarea {
-  border: 1px #f47d18 solid;
+  border: 1px #daa43b solid;
   margin-top: 10px;
 }
 
@@ -325,7 +332,7 @@
 }
 
 #tin-tuc .ttda-title {
-  background-color: #f47d18;
+  background-color: #daa43b;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 5px;
@@ -360,7 +367,7 @@
   border-radius: 3px;
   border: 1px #ccc solid;
   padding: 5px 20px;
-  color: #f47d18;
+  color: linear-gradient(#f4e184, #c9ab56);
   text-transform: uppercase;
 }
 

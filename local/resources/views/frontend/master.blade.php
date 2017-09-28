@@ -47,6 +47,9 @@
 </script>
 @yield('scripts')
 {{ Html::script('js/scripts.js') }}
+<div class="phone_hotline hidden-xs hidden-sm">
+    {{ Html::image('images/temps/icon_hotline.png','',array('class'=>'')) }}
+</div>
 <div class="callback hidden-lg hidden-md">
     <div class="phone_animation">
         <div class="phone_animation_circle"></div>

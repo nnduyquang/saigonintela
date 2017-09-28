@@ -16,9 +16,9 @@
         font-size: 32px;
         border-width: 0px;
         border-style: none;
-        background: #f47d18;
-        color: #ffffff;
-        border-color: #f47d18;
+        background: $main-bg-color;
+        color: #fe0202;
+        border-color: $main-bg-color;
         width: 3em;
         text-align: center;
         height: 1.5em;
@@ -32,7 +32,7 @@
         border-left: 1.5em solid rgba(0, 0, 0, 0);
         border-right: 1.5em solid rgba(0, 0, 0, 0);
         border-bottom: 1em solid;
-        border-bottom-color: inherit !important;
+        border-bottom-color: #f4e184;
       }
       .tt-icon:after {
         content: "";
@@ -42,7 +42,7 @@
         border-left: 1.5em solid rgba(0, 0, 0, 0);
         border-right: 1.5em solid rgba(0, 0, 0, 0);
         border-top: 1em solid;
-        border-top-color: inherit !important;
+        border-top-color: #c9ab56;
       }
       .tt-d-left {
         text-align: right;

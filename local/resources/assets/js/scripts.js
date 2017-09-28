@@ -4,7 +4,7 @@ var plugins = {
     slider1: $('#slider1'),
     lightgallery: $('#lightgallery'),
     bottomMenu: $('.bottom-menu'),
-    btnSendMail:$('#btnSendMail'),
+    btnSendMail: $('#btnSendMail'),
 };
 $(document).ready(function () {
     function sidebar() {
@@ -43,42 +43,59 @@ $(document).ready(function () {
 
     function runScrollOnFix() {
         var wrap = plugins.bottomMenu;
-        var logo1=$('.img-logo-1');
-        var logo2=$('.img-logo-2');
+        var logo1 = $('.img-logo-1');
+        var logo2 = $('.img-logo-2');
         if (plugins.slider1.length) {
             $(window).on("scroll", function (e) {
                 if ($(this).scrollTop() > 840) {
                     wrap.addClass("navbar-fixed-top");
-                    logo2.css('display','block');
-                    logo1.css('display','none');
-                    setTimeout(function(){logo2.addClass('move-down')},1);
-                    setTimeout(function(){logo1.removeClass('move-up')},1);
+                    // logo2.css('display', 'block');
+                    logo1.css('display', 'none');
+                    // setTimeout(function () {
+                    //     logo2.addClass('move-down')
+                    // }, 1);
+                    // setTimeout(function () {
+                    //     logo1.removeClass('move-up')
+                    // }, 1);
                 } else {
                     wrap.removeClass("navbar-fixed-top");
-                    logo2.css('display','none');
-                    logo1.css('display','block');
-                    setTimeout(function(){logo2.removeClass('move-down')},1);
-                    setTimeout(function(){logo1.addClass('move-up')},1);
+                    // logo2.css('display', 'none');
+                    logo1.css('display', 'none');
+                    // setTimeout(function () {
+                    //     logo2.removeClass('move-down')
+                    // }, 1);
+                    // setTimeout(function () {
+                    //     logo1.addClass('move-up')
+                    // }, 1);
                 }
             });
-        }else{
+        } else {
             $(window).on("scroll", function (e) {
                 if ($(this).scrollTop() > 50) {
                     wrap.addClass("navbar-fixed-top");
-                    logo2.css('display','block');
-                    logo1.css('display','none');
-                    setTimeout(function(){logo2.addClass('move-down')},1);
-                    setTimeout(function(){logo1.removeClass('move-up')},1);
+                    // logo2.css('display', 'block');
+                    logo1.css('display', 'none');
+                    // setTimeout(function () {
+                    //     logo2.addClass('move-down')
+                    // }, 1);
+                    // setTimeout(function () {
+                    //     logo1.removeClass('move-up')
+                    // }, 1);
                 } else {
                     wrap.removeClass("navbar-fixed-top");
-                    logo2.css('display','none');
-                    logo1.css('display','block');
-                    setTimeout(function(){logo2.removeClass('move-down')},1);
-                    setTimeout(function(){logo1.addClass('move-up')},1);
+                    // logo2.css('display', 'none');
+                    logo1.css('display', 'none');
+                    // setTimeout(function () {
+                    //     logo2.removeClass('move-down')
+                    // }, 1);
+                    // setTimeout(function () {
+                    //     logo1.addClass('move-up')
+                    // }, 1);
                 }
             });
         }
     }
+
     function getBaseURL() {
         var url = location.href;  // entire url including querystring - also: window.location.href;
         var baseURL = url.substring(0, url.indexOf('/', 14));
@@ -97,6 +114,7 @@ $(document).ready(function () {
         }
 
     }
+
     function sendMail() {
         $('.loadingSending').css('display', 'inline-block');
         $('.errorEmail').css('display', 'none');
@@ -166,16 +184,20 @@ $(document).ready(function () {
             }
         });
     }
-    function runFancyBox(){
+
+    function runFancyBox() {
         $('a.img-fancy').fancybox({
-            'transitionIn'	:	'elastic',
-            'transitionOut'	:	'elastic',
-            'speedIn'		:	600,
-            'speedOut'		:	200,
-            'overlayShow'	:	false
+            'transitionIn': 'elastic',
+            'transitionOut': 'elastic',
+            'speedIn': 600,
+            'speedOut': 200,
+            'overlayShow': false,
+             'width': 900,
+            'height':600
         }).trigger('click');
     }
-    if(window.screen.width>=750){
+
+    if (window.screen.width >= 750) {
         runFancyBox();
     }
 

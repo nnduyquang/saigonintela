@@ -57,7 +57,7 @@
         <div class="col-md-12">
             <div class="form-group">
                 <label for="email">Yêu Cầu Thêm:</label>
-                {!! Form::textarea('lh_description',null, array('placeholder' => '','id'=>'emp-note','class' => 'form-control','rows'=>'15','style'=>'resize:none')) !!}
+                {!! Form::textarea('lh_description',null, array('placeholder' => '','id'=>'emp-note','class' => 'form-control','rows'=>'5','style'=>'resize:none')) !!}
             </div>
         </div>
         <div class="col-md-12" style="text-align: center">
