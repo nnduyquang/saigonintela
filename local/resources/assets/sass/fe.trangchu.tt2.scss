@@ -1,0 +1,36 @@
+#thong-tin-2{
+  text-align: center;
+  img.img-title{
+    width: 40%;
+  }
+  #tt-info{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    ul{
+      li{
+        color: #6f2900;
+        font-size: 17px;
+        position: relative;
+        margin-bottom: 10px;
+        span.list-number{
+          width: 32px;
+          height: 32px;
+          border-radius: 32px;
+          border: 1px solid #854a27;
+          display: inline-block;
+          text-align: center;
+          line-height: 32px;
+          position: absolute;
+          top: 2px;
+          left: 0;
+        }
+        span.list-text{
+          padding: 2px 0 2px 50px;
+          display: block;
+          line-height: 30px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

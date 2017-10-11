@@ -24,11 +24,15 @@
         {{ Html::image('images/sliders/SMART-CITY-2.jpg','',array('class'=>'show-once')) }}
     </a>
     @include('frontend.trangchu.khuyenmai')
-    @include('frontend.trangchu.thongtin')
-    @include('frontend.trangchu.gioithieu')
+    {{--@include('frontend.trangchu.thongtin')--}}
+    @include('frontend.trangchu.thongtin2')
+    {{--@include('frontend.trangchu.gioithieu')--}}
+    @include('frontend.trangchu.gioithieu2')
     @include('frontend.trangchu.bando')
-    @include('frontend.trangchu.vitri')
-    @include('frontend.trangchu.tienich')
+    {{--@include('frontend.trangchu.vitri')--}}
+    @include('frontend.trangchu.vitri2')
+    {{--@include('frontend.trangchu.tienich')--}}
+    @include('frontend.trangchu.tienich2')
     @include('frontend.trangchu.lienhe')
     @include('frontend.trangchu.tintuc')
 @stop

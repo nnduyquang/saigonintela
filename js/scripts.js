@@ -218,5 +218,10 @@ $(document).ready(function () {
             sendMail();
         });
     }
-
+    $(".fancybox").fancybox({
+        thumbs : {
+            autoStart   : true,   // Display thumbnails on opening
+            hideOnClose : true     // Hide thumbnail grid when closing animation starts
+        },
+    });
 });

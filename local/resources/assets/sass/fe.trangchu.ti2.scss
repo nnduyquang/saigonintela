@@ -1,0 +1,47 @@
+#tien-ich-2{
+  text-align: center;
+  img.img-title{
+    width: 10%;
+  }
+  #list-tab{
+    .nav-tabs{
+      border-bottom: none;
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+      margin-bottom: 20px;
+      li{
+        a{
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: bolder;
+          color: #333;
+          transition: all 0.3s ease-in-out;
+        }
+        a,a:hover{
+          border: none;
+
+        }
+
+        a:hover{
+          color: #bd0101;
+          border-bottom: 2px solid #bd0101;
+          background-color: #fff;
+        }
+      }
+    }
+    li.active a{
+      color: #bd0101;
+    }
+    .tab-content{
+      .photo-wrapper{
+        padding: 20px 0 0;
+        border-top: 7px solid #bb0000;
+        border-bottom: 7px solid #bb0000;
+        img.img-ti2-list{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

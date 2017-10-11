@@ -1,0 +1,47 @@
+#gioi-thieu-2{
+  text-align: center;
+  margin-top: 30px;
+  img.img-title{
+    width: 20%;
+  }
+  #gt-info{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    ul{
+      li{
+        color: #6f2900;
+        font-size: 17px;
+        margin-bottom: 7px;
+        text-align: left;
+      }
+    }
+  }
+  img.img-gt2-list{
+    max-width: 400px;
+    max-height: 200px;
+  }
+}
+@media all and (min-width: 800px) {
+
+  .fancybox-thumbs {
+    top: auto;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    right : 0;
+    height: 95px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    ul{
+      justify-content: center;
+      display: flex;
+    }
+  }
+
+  .fancybox-show-thumbs .fancybox-inner {
+    right: 0;
+    bottom: 95px;
+  }
+
+}

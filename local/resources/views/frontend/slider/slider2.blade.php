@@ -3,7 +3,7 @@
                 <span class="slider-text-thongminh blink_me"><a
                             href="http://www.saigonintelahcm.com/tin-tuc/6-tieu-chuan-can-ho-thong-minh">6<br> Thông Minh</a></span>
         <span class="slider-text-khacbiet blink_me"><a
-                    href="http://www.saigonintelahcm.com/tin-tuc/6-tieu-chuan-can-ho-thong-minh">8<br> Khác Biệt</a></span>
+                    href="http://www.saigonintelahcm.com/tin-tuc/8-dieu-khac-biet-duy-nhat-chi-co-tai-saigon-intela">8<br> Khác Biệt</a></span>
         <span class="slider-text-pttt blink_me"><a
                     href="#">Chỉ Từ<br> 900tr/Căn <br>2PN</a></span>
         <span class="slider-text-vt blink_me"><a

@@ -506,7 +506,7 @@ This class is added to the container
   top: 28%;
   left: 87%;
   text-align: center;
-  font-size: 33px;
+  font-size: 30px;
   font-weight: 900;
   line-height: 1;
 }
@@ -549,9 +549,9 @@ This class is added to the container
   position: absolute;
   z-index: 1;
   top: 44%;
-  left: 74%;
+  left: 75%;
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 900;
   line-height: 1;
 }
@@ -609,11 +609,11 @@ This class is added to the container
   #slider2 .slider-text-thongminh {
     position: absolute;
     z-index: 1;
-    top: 60%;
+    top: 61%;
     left: 58%;
     color: white;
     text-align: center;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 900;
     line-height: 1;
   }
@@ -624,7 +624,7 @@ This class is added to the container
     position: absolute;
     z-index: 1;
     top: 27%;
-    left: 88%;
+    left: 87%;
     text-align: center;
     font-size: 28px;
     font-weight: 900;
@@ -637,7 +637,7 @@ This class is added to the container
     position: absolute;
     z-index: 1;
     top: 29%;
-    left: 57%;
+    left: 54%;
     text-align: center;
     font-size: 34px;
     font-weight: 900;
@@ -662,7 +662,7 @@ This class is added to the container
   #slider2 .slider-text-ti {
     position: absolute;
     z-index: 1;
-    top: 44%;
+    top: 45%;
     left: 75%;
     text-align: center;
     font-size: 25px;
@@ -718,8 +718,8 @@ This class is added to the container
   margin: 0 auto;
   margin-bottom: 1px;
   margin-bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f4e184), to(#c9ab56));
-  background: linear-gradient(#f4e184, #c9ab56);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9ec8a), to(#b17725));
+  background: linear-gradient(#f9ec8a, #b17725);
 }
 
 .menu-desktop .bottom-menu ul.main-menu {
@@ -845,7 +845,7 @@ This class is added to the container
 #footer .f-hotline {
   padding-top: 18px;
   padding-bottom: 18px;
-  background-color: linear-gradient(#f4e184, #c9ab56);
+  background-color: linear-gradient(#f9ec8a, #b17725);
   color: white;
 }
 
@@ -854,10 +854,13 @@ This class is added to the container
 }
 
 #footer .f-wrap-info {
-  background-color: #3f3f3f;
+  background-color: #fe0202;
   color: white;
   padding-top: 18px;
   padding-bottom: 18px;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.2;
 }
 
 #footer .f-wrap-info .f-img-logo {
@@ -865,14 +868,20 @@ This class is added to the container
 }
 
 #footer .f-bottom {
-  background-color: #2f2f2f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9ec8a), to(#b17725));
+  background: linear-gradient(#f9ec8a, #b17725);
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: right;
 }
 
 #footer .f-bottom span {
   color: white;
   display: block;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #footer .f-bottom {
+    text-align: center;
+  }
 }
