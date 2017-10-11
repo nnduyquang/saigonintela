@@ -718,8 +718,8 @@ This class is added to the container
   margin: 0 auto;
   margin-bottom: 1px;
   margin-bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9ec8a), to(#b17725));
-  background: linear-gradient(#f9ec8a, #b17725);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #b00000), to(#e80000));
+  background: linear-gradient(to bottom, #b00000 1%, #e80000 100%);
 }
 
 .menu-desktop .bottom-menu ul.main-menu {
@@ -845,7 +845,7 @@ This class is added to the container
 #footer .f-hotline {
   padding-top: 18px;
   padding-bottom: 18px;
-  background-color: linear-gradient(#f9ec8a, #b17725);
+  background-color: linear-gradient(to bottom, #b00000 1%, #e80000 100%);
   color: white;
 }
 
@@ -868,8 +868,8 @@ This class is added to the container
 }
 
 #footer .f-bottom {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9ec8a), to(#b17725));
-  background: linear-gradient(#f9ec8a, #b17725);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #b00000), to(#e80000));
+  background: linear-gradient(to bottom, #b00000 1%, #e80000 100%);
   padding-top: 10px;
   padding-bottom: 10px;
 }

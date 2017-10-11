@@ -1,3 +1,4 @@
+$main-title-color: rgba(176,0,0,1);
 #posts-content {
   img{
     width: 100%;
@@ -6,12 +7,12 @@
     width: 100%;
   }
   .p-w-title {
-    border: 3px #daa43a solid;
+    border: 3px $main-title-color solid;
     h1.p-title {
       margin: 0;
       font-size: 18px;
       line-height: 36px;
-      background: #daa43a;
+      background: $main-title-color;
       color: #fff;
       border: 3px #fff solid;
       text-indent: 10px;

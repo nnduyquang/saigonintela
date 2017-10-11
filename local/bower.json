@@ -22,6 +22,7 @@
     "AdminLTE": "admin-lte#^2.3.11",
     "ckeditor": "#full/latest",
     "bootstrap-toggle": "^2.2.2",
-    "fancybox": "^3.1.25"
+    "fancybox": "^3.1.25",
+    "owl.carousel": "^2.2.1"
   }
 }

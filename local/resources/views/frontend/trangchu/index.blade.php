@@ -26,6 +26,7 @@
     @include('frontend.trangchu.khuyenmai')
     {{--@include('frontend.trangchu.thongtin')--}}
     @include('frontend.trangchu.thongtin2')
+    @include('frontend.trangchu.thietke')
     {{--@include('frontend.trangchu.gioithieu')--}}
     @include('frontend.trangchu.gioithieu2')
     @include('frontend.trangchu.bando')
@@ -34,5 +35,5 @@
     {{--@include('frontend.trangchu.tienich')--}}
     @include('frontend.trangchu.tienich2')
     @include('frontend.trangchu.lienhe')
-    @include('frontend.trangchu.tintuc')
+    {{--@include('frontend.trangchu.tintuc')--}}
 @stop

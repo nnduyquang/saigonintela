@@ -12,7 +12,7 @@
 
 #khuyen-mai .km-top span.km-span-dash .line {
   height: 1px;
-  border-top: 3px solid #daa43b;
+  border-top: 3px solid #b00000;
   border-bottom: 3px solid #ebebeb;
   display: block;
   position: relative;
@@ -23,8 +23,9 @@
 #khuyen-mai .km-top h4 {
   white-space: pre;
   padding: 0 0.8em;
-  color: #daa43b;
+  color: #b00000;
   text-transform: uppercase;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 768px) {
@@ -75,6 +76,87 @@
   display: block;
   line-height: 30px;
   text-align: left;
+}
+
+#thiet-ke {
+  text-align: center;
+}
+
+#thiet-ke img.img-title {
+  width: 10%;
+}
+
+#thiet-ke img.big-image {
+  height: 372px;
+  width: 100%;
+  background-color: #f2f2f2;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#thiet-ke .shadow {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset -1px -1px 20px 500px rgba(0, 0, 0, 0.3);
+          box-shadow: inset -1px -1px 20px 500px rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#thiet-ke .owl-carousel {
+  position: relative;
+}
+
+#thiet-ke .owl-carousel .owl-item img {
+  height: 150px;
+}
+
+#thiet-ke .owl-carousel .owl-item img:hover {
+  cursor: pointer;
+}
+
+#thiet-ke .owl-theme .owl-nav [class*='owl-'] {
+  background-color: #fff;
+  color: #DC0000;
+  top: 0;
+  padding: 62px 10px;
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  opacity: 0.7;
+}
+
+#thiet-ke .owl-prev, #thiet-ke .owl-next {
+  position: absolute;
+}
+
+#thiet-ke .owl-next {
+  right: 0;
+}
+
+#thiet-ke .owl-theme .owl-nav [class*='owl-']:hover {
+  opacity: 1;
+  background-color: #fff;
+}
+
+#thiet-ke .owl-theme .owl-nav [class*='owl-'] i {
+  font-size: 46px;
+}
+
+#thiet-ke .uk-thumbnail {
+  border-radius: 0;
+}
+
+#thiet-ke .owl-carousel {
+  margin: 3px 0;
+}
+
+#thiet-ke .owl-carousel .owl-nav .owl-prev {
+  left: 0;
+  right: auto;
 }
 
 #gioi-thieu-2 {
@@ -205,6 +287,8 @@
 
 #tien-ich-2 #list-tab .tab-content .photo-wrapper img.img-ti2-list {
   width: 100%;
+  height: 200px;
+  padding-left: 5px;
 }
 
 #lien-he .lh-top {
@@ -221,7 +305,7 @@
 
 #lien-he .lh-top span.lh-span-dash .line {
   height: 1px;
-  border-top: 3px solid #daa43b;
+  border-top: 3px solid #b00000;
   border-bottom: 3px solid #ebebeb;
   display: block;
   position: relative;
@@ -232,7 +316,7 @@
 #lien-he .lh-top h4 {
   white-space: pre;
   padding: 0 0.8em;
-  color: #daa43b;
+  color: #b00000;
   text-transform: uppercase;
 }
 
@@ -254,7 +338,7 @@
 }
 
 #lien-he input, #lien-he textarea {
-  border: 1px #daa43b solid;
+  border: 1px #b00000 solid;
   margin-top: 10px;
 }
 
@@ -306,7 +390,7 @@
 }
 
 #tin-tuc .ttda-title {
-  background-color: #daa43b;
+  background-color: #b00000;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 5px;
@@ -341,7 +425,7 @@
   border-radius: 3px;
   border: 1px #ccc solid;
   padding: 5px 20px;
-  color: linear-gradient(#f9ec8a, #b17725);
+  color: linear-gradient(to bottom, #b00000 1%, #e80000 100%);
   text-transform: uppercase;
 }
 

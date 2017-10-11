@@ -224,4 +224,39 @@ $(document).ready(function () {
             hideOnClose : true     // Hide thumbnail grid when closing animation starts
         },
     });
+    $('.owl-carousel').owlCarousel({
+        animateOut: 'fadeOutRight',
+        animateIn: 'fadeInLeft',
+        items: 4,
+        smartSpeed: 450,
+        margin: 20,
+        nav:true,
+        dots:false,
+        responsive:{
+            0: {
+                items: 2
+            },
+            500: {
+                items: 2
+            },
+            736: {
+                items: 3
+            },
+            768: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+    $(".owl-nav .owl-prev").html("<img src='images/temps/red_back_btn.png' alt='Prev'/>");
+    $(".owl-nav .owl-next").html("<img src='images/temps/red_next_btn.png' alt='Prev'/>");
+    $('img[data-image=zoom]').click(function(){
+        var src=$(this).attr('src');
+        $('.img-tk-list').removeClass('shadow');
+        $(this).addClass('shadow');
+        $('.big-image').attr('src',src);
+    });
+
 });
