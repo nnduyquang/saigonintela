@@ -26,7 +26,7 @@
                         {!! $post->content !!}
                     @endif
                 @endforeach
-                <div class="dash-full-width"></div>
+                {{--<div class="dash-full-width"></div>--}}
             </div>
         </div>
         <div class="col-md-2"></div>

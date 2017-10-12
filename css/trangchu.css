@@ -1,3 +1,7 @@
+#khuyen-mai iframe {
+  height: 400px;
+}
+
 #khuyen-mai .km-top {
   display: table;
 }
@@ -29,6 +33,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  #khuyen-mai iframe {
+    height: 200px;
+    width: 100%;
+  }
   #khuyen-mai .km-top span.km-span-dash {
     display: none;
   }
@@ -44,6 +52,10 @@
 
 #thong-tin-2 img.img-title {
   width: 40%;
+}
+
+#thong-tin-2 img.img-khacbiet {
+  width: 100%;
 }
 
 #thong-tin-2 #tt-info {
@@ -159,6 +171,12 @@
   right: auto;
 }
 
+@media screen and (max-width: 768px) {
+  #thiet-ke img.big-image {
+    height: 250px;
+  }
+}
+
 #gioi-thieu-2 {
   text-align: center;
   margin-top: 30px;
@@ -181,7 +199,7 @@
 }
 
 #gioi-thieu-2 img.img-gt2-list {
-  max-width: 400px;
+  width: 100%;
   max-height: 200px;
 }
 

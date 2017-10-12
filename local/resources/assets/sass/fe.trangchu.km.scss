@@ -1,4 +1,7 @@
 #khuyen-mai {
+  iframe{
+    height: 400px;
+  }
   .km-top {
     display: table;
     span.km-span-dash {
@@ -28,6 +31,10 @@
 }
 @media screen and(max-width: 768px) {
   #khuyen-mai{
+    iframe{
+      height: 200px;
+      width: 100%;
+    }
     .km-top {
       span.km-span-dash {
         display: none;

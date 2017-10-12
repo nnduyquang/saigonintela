@@ -27,3 +27,30 @@
   margin-bottom: 10px;
   padding: 10px;
 }
+
+@media all and (min-width: 800px) {
+  .fancybox-thumbs {
+    top: auto;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 95px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .fancybox-thumbs ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .fancybox-show-thumbs .fancybox-inner {
+    right: 0;
+    bottom: 95px;
+  }
+}

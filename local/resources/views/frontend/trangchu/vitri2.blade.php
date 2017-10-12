@@ -1,7 +1,5 @@
 <div id="vi-tri-2" class="col-md-12">
-    <div class="row">
         <div class="container">
-            <div class="row">
                 <div class="col-md-6 vcenter">
                     <div class="col-md-12">
                         <div class="row">
@@ -26,9 +24,7 @@
                             {{ Html::image('images/temps/06ano_tien-ich-lien-ket.jpg','',array('class'=>'img-vt2')) }}</a>
                     </div>
                 </div>
-            </div>
         </div>
-    </div>
 </div>
 
 

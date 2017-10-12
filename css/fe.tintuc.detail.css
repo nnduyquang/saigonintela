@@ -7,7 +7,7 @@
 }
 
 #p-d-tin-tuc .p-d-w-title {
-  border: 3px #ddbb1b solid;
+  border: 3px #b00000 solid;
   margin-bottom: 20px;
 }
 
@@ -15,7 +15,7 @@
   margin: 0;
   font-size: 18px;
   line-height: 36px;
-  background: #ddbb1b;
+  background: #b00000;
   color: #fff;
   border: 3px #fff solid;
   text-indent: 10px;

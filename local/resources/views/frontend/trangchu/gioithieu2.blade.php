@@ -9,7 +9,7 @@
                     <div class="col-md-6">
                         <ul>
                             <li>
-                                <strong>- Vị Trí Dự Án: </strong>Khu Độ Thị Nam Sài Gòn
+                                <strong>- Vị Trí Dự Án: </strong>Khu Đô Thị Nam Sài Gòn
                             </li>
                             <li>
                                 <strong>- Tổng Diện Tích Dự Án: </strong>9.016 m2
