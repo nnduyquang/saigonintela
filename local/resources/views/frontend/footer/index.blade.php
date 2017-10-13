@@ -13,9 +13,7 @@
                 <div class="col-md-6">
                     <p>THÔNG TIN LIÊN HỆ</p>
                     <p><strong>Địa chỉ:</strong> <span class="dc">DP-11, Dragon Parc 1, Đường Nguyễn Hữu Thọ, Phước Kiển, H.Nhà Bè. TP.HCM.</span></p>
-                    <p><strong>Nhà mẫu:</strong> <span class="dc">131 Nguyễn Khoái, P1, Quận 4, TP.Hồ Chí Minh</span></p>
                     <p><strong>Đường dây nóng:</strong> 0909.633.252</p>
-
                     <p><strong>Website:</strong> saigonintelahcm.com</p>
                     <p></p>
                     <p><strong>Email:</strong> saigonintelahcm@gmail.com</p>

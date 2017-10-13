@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="container">
                     <ul class="sub-menu">
-                        <li><a href="">Thanh Toán</a></li>
+                        <li><a href="http://saigonintelahcm.com/images/uploads/images/temps/TB%2093-%20PHU%CC%9BO%CC%9BNG%20THU%CC%9B%CC%81C%20THANH%20TOA%CC%81N%20SAIGON%20INTELA.pdf">Thanh Toán</a></li>
                         <li><a href="">Tiến Độ</a></li>
                         <li><a class="sm-icon-phone" href="">{{$phone->content}}</a></li>
                     </ul>
@@ -30,7 +30,7 @@
                     <li><a href="{{URL::to('vi-tri')}}">Vị Trí</a></li>
                     <li><a href="{{URL::to('tien-ich')}}">Tiện Ích</a></li>
                     <li><a href="{{URL::to('tin-tuc')}}">Tin Tức</a></li>
-                    <li><a href="">Video</a></li>
+                    <li><a href="http://www.saigonintelahcm.com/tin-tuc/uu-dai">Ưu Đãi</a></li>
                     <li><a href="{{URL::to('lien-he')}}">Liên Hệ</a></li>
                 </ul>
             </div>

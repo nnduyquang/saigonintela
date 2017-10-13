@@ -51,6 +51,7 @@
         <tr>
             <th>TT</th>
             <th>Tiều Đề</th>
+            <th>Path</th>
             <th>Người Đăng</th>
             <th>Ngày Đăng</th>
             <th>Ngày Cập Nhật</th>
@@ -60,6 +61,7 @@
         @foreach ($news as $key => $data)
             <td>{{ ++$i }}</td>
             <td>{{ $data->title }}</td>
+            <td>{{ $data->path }}</td>
             <td>{{ $data->users->name }}</td>
             <td>{{ $data->created_at }}</td>
             <td>{{ $data->updated_at }}</td>
