@@ -399,4 +399,5 @@ scratch. This page gets rid of all links and provides the needed markup only.
 {{ Html::script('js/core.backend.js') }}
 {{ Html::script('js/ckeditor/ckeditor.js') }}
 @yield('scripts')
+</body>
 </html>
